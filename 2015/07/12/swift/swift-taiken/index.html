@@ -1,0 +1,1240 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.2"/>
+
+
+    <meta name="description" content="Webもアプリも会社経営も何でもやってます。" />
+
+
+
+  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.2" />
+
+
+
+
+  <title>  // TERAKOYA </title>
+</head>
+
+<body>
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+    
+    
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              
+            
+          
+        </h1>
+      
+
+     
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <p>layout: post<br>title: “Swift”<br>date: 2015-06-20 00:01:00<br>comments: false<br>tags: </p>
+<ul>
+<li>Swift<br>categories: </li>
+<li>Swift</li>
+</ul>
+<h1 id="iOSアプリ（Swift）体験_&amp;_Apple_Watchアプリ体験">iOSアプリ（Swift）体験 &amp; Apple Watchアプリ体験</h1><p><img src="https://www.evernote.com/l/AB27wRDpA-xJTZSKQKt9vAMIK7sUXBaPOzYB/image.png" alt=""></p>
+<h2 id="Swiftについて">Swiftについて</h2><p>今回のセミナーでは今大人気のSwiftプログラミング言語を使ってiOSアプリ開発を体験いたします。</p>
+<h3 id="Swiftとは">Swiftとは</h3><ul>
+<li>2014年6月にApple社の開発者向けイベント「WWDC（Worldwide Developer Conference）により発表されたプログラミング言語。</li>
+<li>iOS及び、Mac OS Xで動作するアプリケーション開発言語</li>
+<li>今までのプログラミング言語「Objective-C」「C言語」と併用して利用可能</li>
+</ul>
+<h3 id="Swiftの特徴">Swiftの特徴</h3><table>
+<thead>
+<tr>
+<th>Swift特徴</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>モダン</td>
+<td>JavascriptやRubyといった新しいプログラミング言語の仕様を参考にしており、洗練されたプログラミングの記述が可能。</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>プログラミングの記述ミスによって生まれるバグが起こりにくい文法になっている。</td>
+</tr>
+<tr>
+<td>高速</td>
+<td>Objective-Cよりも処理が高速といわれています。</td>
+</tr>
+<tr>
+<td>すぐ試せる</td>
+<td>Xcodeの中に新しくPlaygroundというツールができ、リアルタイムでSwiftのプログラムを実行・確認できるようになっています。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="SwiftでiOSアプリ開発体験">SwiftでiOSアプリ開発体験</h2><h3 id="アプリ開発の流れ">アプリ開発の流れ</h3><p>iOSのアプリ開発は基本的に下記の流れで開発していきます。</p>
+<ol>
+<li>Xcodeプロジェクト作成</li>
+<li>アプリ基本設定（アプリアイコン、画面の傾き、アイコンラベル）</li>
+<li>画面デザイン</li>
+<li>プログラミング</li>
+<li>シュミレーターで動作確認</li>
+<li>実機で動作確認（※ iOS Developer Programへの加入が必要 有料）</li>
+<li>アプリ申請</li>
+<li>リリース</li>
+</ol>
+<h3 id="Xcodeを起動">Xcodeを起動</h3><p>ドックからXcodeを起動してください。</p>
+<p><img src="https://www.evernote.com/l/AB3JAukFjrFHUY6mF9mRctDD4F4L5CRcGmwB/image.png" alt=""></p>
+<p>「Create a new Xcode project」を選択してください。</p>
+<p><img src="https://www.evernote.com/l/AB3TFgZHeKpEGZC6jAnTWlsau4XBqXCqyRcB/image.png" alt=""></p>
+<p>「Single View Apprication」を選択し「Next」ボタンをクリックしてください。</p>
+<p><img src="https://www.evernote.com/l/AB20BrCw-5ZCibs283VlQuhUwsSki7MDD4kB/image.png" alt=""></p>
+<p>次の画面で下表のとおりに入力して「Next」ボタンをクリックしてください。</p>
+<table>
+<thead>
+<tr>
+<th>入力項目</th>
+<th>入力内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product Name</td>
+<td>hello-swift</td>
+</tr>
+<tr>
+<td>Oranization Name</td>
+<td>アカウント名</td>
+</tr>
+<tr>
+<td>Oranization Identifier</td>
+<td>com.swifttest</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Swift</td>
+</tr>
+<tr>
+<td>Device</td>
+<td>iPhone</td>
+</tr>
+<tr>
+<td>Use Core Data</td>
+<td>チェックしない</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://www.evernote.com/l/AB0yFfyrJnJJk5qUwyNLw9RcOqDdlSubLxYB/image.png" alt=""></p>
+<p>次の画面でプロジェクトを保存する場所を指定します。「書類」フォルダを選んで「Create」ボタンをクリックしてください。</p>
+<p><img src="https://www.evernote.com/l/AB127JnRC9JCzrEDJDto7tW-s5Dw6hydCIgB/image.png" alt=""></p>
+<p>これでプロジェクトの作成は完了です。次の画面で表示されればOKです。</p>
+<p><img src="https://www.evernote.com/l/AB2qj4kE-TRFMqeZ0yHDGgqd0n5KRl0ZMjwB/image.png" alt=""></p>
+<h3 id="アプリ基本設定">アプリ基本設定</h3><p>次にアプリの基本設定をしていきます。</p>
+<h4 id="アプリアイコン設定">アプリアイコン設定</h4><p>アプリアイコンをセットしていきます。</p>
+<h4 id="アプリアイコンのサイズ設定">アプリアイコンのサイズ設定</h4><p>まずその前に各種アプリアイコンのサイズを下記に記しておきます。</p>
+<h5 id="アイコン">アイコン</h5><table>
+<thead>
+<tr>
+<th>画面スケール</th>
+<th>サイズ(px)</th>
+<th>角丸半径(px)</th>
+<th>画像名(例)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x2</td>
+<td>120 x 120</td>
+<td>26</td>
+<td>iPhone-Icon-60@2x</td>
+</tr>
+<tr>
+<td>x3</td>
+<td>180 x 180</td>
+<td>39</td>
+<td>iPhone-Icon-60@3x</td>
+</tr>
+</tbody>
+</table>
+<h5 id="設定画面用アイコン">設定画面用アイコン</h5><table>
+<thead>
+<tr>
+<th>画面スケール</th>
+<th>サイズ(px)</th>
+<th>角丸半径(px)</th>
+<th>画像名(例)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x1</td>
+<td>29 x 29</td>
+<td>6</td>
+<td>iPhone-Setting-29</td>
+</tr>
+<tr>
+<td>x2</td>
+<td>58 x 58</td>
+<td>13</td>
+<td>iPhone-Setting-29@2x</td>
+</tr>
+<tr>
+<td>x3</td>
+<td>87 x 87</td>
+<td>18</td>
+<td>iPhone-Setting-29@3x</td>
+</tr>
+</tbody>
+</table>
+<h5 id="Spotlight用アイコン">Spotlight用アイコン</h5><table>
+<thead>
+<tr>
+<th>画面スケール</th>
+<th>サイズ(px)</th>
+<th>角丸半径(px)</th>
+<th>画像名(例)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x2</td>
+<td>80 x 80</td>
+<td>18</td>
+<td>iPhone-Spotlight-40@2x</td>
+</tr>
+<tr>
+<td>x3</td>
+<td>120 x 120</td>
+<td>27</td>
+<td>iPhone-Spotlight-40@3x</td>
+</tr>
+</tbody>
+</table>
+<p>今回、このサイズを揃えるのは大変なので下記よりダウンロードしてください。</p>
+<p><a href="https://drive.google.com/file/d/0B-KWga_ya98KbHBrSEVIOFA2dG8/view?usp=sharing" target="_blank">アイコンダウンロード</a></p>
+<p>アイコンをダウンロードしたらナビゲーションエリアから「images.xcassets」を選択して下図のとおりアイコンをドラックして配置してください。</p>
+<p><img src="https://www.evernote.com/l/AB3ObqDFcLtLyqiG3DKCzIeyuDA2xFJQw8MB/image.png" alt=""></p>
+<p>アプリアイコンがセットされているか確認してみましょう。<br>Xcode画面の左上の下図の①箇所を「iPhone5s」にし、Runボタン（②の箇所）をクリックしてください。</p>
+<p><img src="https://www.evernote.com/l/AB22eh6jHSdC55kXJ1Y7OO30fIACynpkszMB/image.png" alt=""></p>
+<p>iOSシュミレーターが表示されると思います。<br>この状態で<code>command + shift + h</code>をタイプしてください。そうするとホーム画面に戻ります。<br>先ほど設定したアイコンが表示されている事を確認してください。</p>
+<p><img src="https://www.evernote.com/l/AB3HontvCbtHKaUMN0h2yipKNNAkDdl35NIB/image.png" alt=""></p>
+<h5 id="スプラッシュ">スプラッシュ</h5><p>スプラッシュ画像についても下記のサイズが必要になります。</p>
+<table>
+<thead>
+<tr>
+<th>ディスプレイ</th>
+<th>サイズ(px)</th>
+<th>画像名(例)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.5 inch</td>
+<td>320 x 480</td>
+<td>splash</td>
+</tr>
+<tr>
+<td>3.5 inch Retina</td>
+<td>640 x 960</td>
+<td>splash@2x</td>
+</tr>
+<tr>
+<td>4.0 inch Retina</td>
+<td>640 x 1136</td>
+<td>splash-568h@2x</td>
+</tr>
+<tr>
+<td>4.7 inch Retina</td>
+<td>750 x 1334</td>
+<td>splash-667h@2x</td>
+</tr>
+<tr>
+<td>5.5 inch Retina Portrait</td>
+<td>1242 x 2208</td>
+<td>splash-736h@3x</td>
+</tr>
+<tr>
+<td>5.5 inch Retina Landscape</td>
+<td>2208 x 1242</td>
+<td>splash-Landscape-736h@3x</td>
+</tr>
+</tbody>
+</table>
+<p>スプラッシュ画像の設定は下図のとおり①プロジェクトを選択して②Generalタブを選択し、③「App Icon and Launch Images」の「Use Asset Catalog」を選択してください。</p>
+<p><img src="https://www.evernote.com/l/AB2WRuoKlhdF7pCeEFW_5ZRNBodS1iSXPE0B/image.png" alt=""></p>
+<p>次の画面で「Migrate」をクリックします。</p>
+<p><img src="https://www.evernote.com/l/AB2cnoYaiS5EMpAcLwTUb1PMq9s67hqSegAB/image.png" alt=""></p>
+<p>①の箇所を削除して②Lanch Images Sourceの矢印部分をクリックします。</p>
+<p><img src="https://www.evernote.com/l/AB23yxg5QHBCXbH_AJz8fuvRm_hujgRnFi8B/image.png" alt=""></p>
+<p>次の画面の①「LaunchImage」を選択し、②「iOS 8.0 or Later」のPortraitとLandscapeを選択してください。</p>
+<p><img src="https://www.evernote.com/l/AB0GuSmHt-BMC4yQcQD4Qh_4MkJd7sCUwdcB/image.png" alt=""></p>
+<p>スプラッシュ画面のサンプルを下記よりダウンロードしてください。</p>
+<p><a href="https://drive.google.com/file/d/0B-KWga_ya98KdUZrZ2tCeHk2U0E/view?usp=sharing" target="_blank">スプラッシュ画像ダウンロード</a></p>
+<p>ダウンロードしましたら下図のとおりに配置してください。</p>
+<p><img src="https://www.evernote.com/l/AB0nLdrVtZREMqnKvCJFjedrabQbTWRw4aAB/image.png" alt=""></p>
+<p>それではアプリを実行してみましょう。下記のようにアプリ起動時にスプラッシュ画面が表示されると思います。</p>
+<p><img src="https://www.evernote.com/l/AB0a1aJazZBDUoCj3DAYqc-dmop00ozNdPYB/image.png" alt=""></p>
+<h4 id="画面の傾き">画面の傾き</h4><p>次に画面の傾きについて設定します。<br>今回のアプリは縦向きに固定にしたいと思いますので、下図の操作をしてDevice Orientationを「Portrait」のみにしてください。</p>
+<p><img src="https://www.evernote.com/l/AB36ScOipENJV5TC-x96jweT95ghjfdf_VsB/image.png" alt=""></p>
+<h4 id="ホーム画面のアプリタイトル">ホーム画面のアプリタイトル</h4><p>ホームアプリのタイトルを変更します。<br>下図の①の箇所の「Info」を選択し、②の「Bundle name」を箇所を<code>13文字以内（全角6文字）</code>で変更してください。</p>
+<p><img src="https://www.evernote.com/l/AB1w92bhRj5IBZqWwLdoEkUZJBV2SRAzNCYB/image.png" alt=""></p>
+<p>再度、Runボタンを押してシュミレーターを起動したら<code>command + shift + h</code>でホーム画面に戻ってみてください。変更したアプリタイトルが変更されているのが確認できると思います。</p>
+<p><img src="https://www.evernote.com/l/AB2u7oLPlJRDE4AFGpGFAfRLyNgbvy03xUUB/image.png" alt=""></p>
+<p>これでアプリの基本設定は完了です。</p>
+<h3 id="アプリの画面デザイン">アプリの画面デザイン</h3><h4 id="メイン画面デザイン">メイン画面デザイン</h4><p>次にアプリのデザインをしていきます。ナビゲーションエリアからMain.storyboardを選んでください。</p>
+<p><img src="https://www.evernote.com/l/AB0w7Idak7ZNT6c0uWbGP52cqWWM_BA8VaYB/image.png" alt=""></p>
+<h4 id="背景画像を配置">背景画像を配置</h4><p>アプリの背景画像を配置していきます。<br>Googleで画像検索をして好きな背景画像をダウンロードしてください。<br><code>※縦長の画像を選んでください。</code></p>
+<p><img src="https://www.evernote.com/l/AB0YEVzxV0FA-4bFuW4swdOPsf3XM5Gk57kB/image.png" alt=""></p>
+<p>お好きな画像をダウンロードしたら下図のとおりに画像をプロジェクトに追加してください。</p>
+<p><img src="https://www.evernote.com/l/AB1FICVfO0ZNM7S-drHSozWZbHbqBS1EbXwB/image.png" alt=""></p>
+<p>配置したらMain.storyboardに戻り、下図のとおりに画面に配置してください。</p>
+<p><img src="https://www.evernote.com/l/AB0FxcKQCtBF2KhrK0zd5OivaVgdCreRkpAB/image.png" alt=""></p>
+<h5 id="Auto_layoutでの画面配置">Auto layoutでの画面配置</h5><p>iPhoneの様々な画面に対応できるようにAuto layoutの設定をしていきます。<br>下図のとおりMain.storyboardの下部にあるアイコンをクリックしてAuto layoutの設定をしてください。</p>
+<p><img src="https://www.evernote.com/l/AB1j2eODMq5PUbxDS8NAaUyb_Le5WXC43GUB/image.png" alt=""></p>
+<p>次に下図のようにUpdate Frameでauto layoutを有効にします。</p>
+<p><img src="https://www.evernote.com/l/AB0wsTKw5opAoLZAUzx9OCjcS6UhfvqjfoEB/image.png" alt=""></p>
+<h5 id="画面のプレビュー">画面のプレビュー</h5><p>iPhoneの様々な画面でプレビューするには下図の設定をすれば確認できます。<br>まず、下図の①、②のボタンをクリックしてください。</p>
+<p><img src="https://www.evernote.com/l/AB1yskzlwtpGtYrkKGwSRYCJceBAm1ius2MB/image.png" alt=""></p>
+<p>PreviewのMain.storyboardを選んでください。</p>
+<p><img src="https://www.evernote.com/l/AB26a1joEjVCfKpopR0iknGarWgWtQMhs7AB/image.png" alt=""></p>
+<p>そして下図のように「＋」ボタンをクリックしてお好みの画面サイズを選べば、プレビューが確認できるようになります。</p>
+<p><img src="https://www.evernote.com/l/AB2or1ax6OZPAYf65eZDcMYZK9gfD1r5VI0B/image.png" alt=""></p>
+<h4 id="ラベルの配置">ラベルの配置</h4><p>同じ要領でラベルを配置していきましょう。<br>このラベルもAuto layoutで画面中央に配置してください。</p>
+<p><img src="https://www.evernote.com/l/AB3ytUjV6whLYZ56ysQoDBWA34_iIrOQlvIB/image.png" alt=""></p>
+<h4 id="ボタンの配置">ボタンの配置</h4><p>次にボタンを配置します。</p>
+<p><img src="https://www.evernote.com/l/AB3dgNrvg2dC2Lr3wB2Ck77mh3PqLSo7-N4B/image.png" alt=""></p>
+<p>配置したら背景色をいれましょう。下図のように背景色を白にしてください。</p>
+<p><img src="https://www.evernote.com/l/AB3hL73WcTdFr6QkeUQKcHMQyBnYlKBGZb0B/image.png" alt=""></p>
+<p>ボタンをダブルクリックしてラベルを「ボタン」に変更しましょう。</p>
+<p><img src="https://www.evernote.com/l/AB2U7y92nqNNiby4QKmCxHrWJLKLo_WtG1AB/image.png" alt=""></p>
+<p>Auto layoutの設定をします。下図のように設定してください。</p>
+<p><img src="https://www.evernote.com/l/AB2cEGEA-ulFC6zXmiFkF1kLMSEIc71bp_EB/image.png" alt=""></p>
+<p><img src="https://www.evernote.com/l/AB3GWrzbWnVM_7EAsrKYB4Pxxt9jRmnsY0oB/image.png" alt=""></p>
+<p><img src="https://www.evernote.com/l/AB0h4VuISudBYK5qxzWSM9eG_hFJVqF4PPIB/image.png" alt=""></p>
+<p>下記のように表示されればOKです。</p>
+<p><img src="https://www.evernote.com/l/AB3zzp_CyFpBqoXrIONFNagHDKy9cuVzrfEB/image.png" alt=""></p>
+<h3 id="プログラミング">プログラミング</h3><p>それではいよいよSwiftを使ってアプリ開発していきます。<br>ViewController.swiftを開いてください。</p>
+<p><img src="https://www.evernote.com/l/AB0HoOXTzylOXZ9ytZtZ4anI1Hl-_8jG4fMB/image.png" alt=""></p>
+<h4 id="ラベルの関連付け">ラベルの関連付け</h4><p>ViewController.swiftの下記の「ここを追加」を追加してください。<br>ここでは先程、Main.storyboardで配置したラベルとボタンをプログラム上で記述しています。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// ▼▼ ここを追加 ▼▼</span></span><br><span class="line">    <span class="preprocessor">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> label: <span class="type">UILabel</span>! <span class="comment">// ラベルのメンバ変数</span></span><br><span class="line">    <span class="preprocessor">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> button: <span class="type">UIButton</span>! <span class="comment">// ボタンのメンバ変数</span></span><br><span class="line">    <span class="comment">// ▲▲ ここを追加 ▲▲</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">didReceiveMemoryWarning</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.didReceiveMemoryWarning()</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="ボタンタップでラベルが表示・非表示">ボタンタップでラベルが表示・非表示</h4><p>次にボタンをタップしたときのプログラムを記述します。<br>ViewControllerに下記のプログラムを追加してください。<br>※ 場所は<code>viewDidLoad(){ … }</code>の下に追加してください。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ▼▼ ここを追加 ▼▼</span></span><br><span class="line"><span class="comment">// ボタンタップでラベル表示・非表示切り替え</span></span><br><span class="line"><span class="preprocessor">@IBAction</span> <span class="func"><span class="keyword">func</span> <span class="title">buttonTapped</span><span class="params">(sender: AnyObject)</span></span> &#123;</span><br><span class="line">    <span class="keyword">if</span> label.hidden == <span class="built_in">true</span> &#123;</span><br><span class="line">        label.hidden = <span class="built_in">false</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        label.hidden = <span class="built_in">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ▲▲ ここを追加 ▲▲</span></span><br></pre></td></tr></table></figure>
+<h3 id="UI要素とプログラムの関連付け">UI要素とプログラムの関連付け</h3><p>今プログラミングしたものと、Main.storyboardで配置したUI要素を紐付けします。<br>下図を参考にUI要素とプログラムを関連付けてください。</p>
+<p><img src="https://www.evernote.com/l/AB3ZvL6cFZVBYrwBjOwXt07FJrUeU1mIlZUB/image.png" alt=""></p>
+<p><img src="https://www.evernote.com/l/AB3vqQQ1tpNB76ipXB8ja2GYX03TZCqFxz8B/image.png" alt=""></p>
+<p><img src="https://www.evernote.com/l/AB2WNu69E35ONaskrXR-TcjYBJnZvd2iETYB/image.png" alt=""></p>
+<p><img src="https://www.evernote.com/l/AB3i_dvKpM1Eg6FJffu-Yp6dKctU8Hrgu30B/image.png" alt=""></p>
+<h3 id="動作確認">動作確認</h3><p>それではシュミレーターで動作確認しましょう。「Run」ボタンをクリックしてシュミレーターで動作確認してみてください。</p>
+<p><img src="https://www.evernote.com/l/AB2bw63Ik21H9Za3AlujCywhb0GS5Jwq_GgB/image.png" alt=""></p>
+<h3 id="カウンタ機能">カウンタ機能</h3><p>それではアプリにカウンタ機能をつけてみましょう。</p>
+<h4 id="プログラムでラベルを編集">プログラムでラベルを編集</h4><p>Swiftのプログラミング言語でstoryboardを使わずにラベルを編集してみます。<br>ViewController.swiftを<code>viewDidLoad</code>の箇所を下記のように追加してみてください。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">    <span class="comment">// ラベルの文字を大きくする</span></span><br><span class="line">    label.font = <span class="type">UIFont</span>.systemFontOfSize(<span class="number">50</span>)</span><br><span class="line">    <span class="comment">// ラベルの色を赤色に</span></span><br><span class="line">    label.textColor = <span class="type">UIColor</span>.redColor()</span><br><span class="line">    <span class="comment">// ラベルの初期値を0</span></span><br><span class="line">    label.text = <span class="string">"0"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>runボタンをクリックしてシュミレーターで動作確認してみましょう。<br>下図のとおり、ラベルのフォントサイズ、色、テキスト内容をプログラミングで変更する事が可能です。</p>
+<p><img src="https://www.evernote.com/l/AB3FbfL3qWxKwLsg87FPB09qrbPmWtbcQDcB/image.png" alt=""></p>
+<h4 id="カウント機能の実装">カウント機能の実装</h4><p>それではカウント機能を追加します。下記の箇所に追加で<code>count</code>というメンバ変数を追加します。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="type">UIKit</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="preprocessor">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> label: <span class="type">UILabel</span>! <span class="comment">// ラベルのメンバ変数</span></span><br><span class="line">    <span class="preprocessor">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> button: <span class="type">UIButton</span>! <span class="comment">// ボタンのメンバ変数</span></span><br><span class="line">    <span class="comment">// ▼▼ ここを追加 ▼▼</span></span><br><span class="line">    <span class="keyword">var</span> <span class="built_in">count</span> = <span class="number">0</span> <span class="comment">// カウント用メンバ変数</span></span><br><span class="line">    <span class="comment">// ▲▲ ここを追加 ▲▲</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">didReceiveMemoryWarning</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.didReceiveMemoryWarning()</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>次に、先程プログラミングした<code>buttonTapped</code>の箇所のラベル表示・非表示のプログラミングの箇所をコメントで無効化し、</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">    <span class="preprocessor">@IBAction</span> <span class="func"><span class="keyword">func</span> <span class="title">buttonTapped</span><span class="params">(sender: AnyObject)</span></span> &#123;</span><br><span class="line">        <span class="comment">// ボタンタップでラベル表示・非表示切り替え</span></span><br><span class="line">        <span class="comment">// ▼▼ コメントして無効化 ▼▼</span></span><br><span class="line">        <span class="comment">// if label.hidden == true &#123;</span></span><br><span class="line">        <span class="comment">// label.hidden = false</span></span><br><span class="line">        <span class="comment">// &#125; else &#123;</span></span><br><span class="line">            <span class="comment">// label.hidden = true</span></span><br><span class="line">        <span class="comment">// &#125;</span></span><br><span class="line">        <span class="comment">// ▲▲ コメントして無効化 ▲▲</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// ▼▼ ここを追加 ▼▼</span></span><br><span class="line">        <span class="comment">// タップ回数を+1</span></span><br><span class="line">        <span class="built_in">count</span>++</span><br><span class="line">        <span class="comment">// 画面に表示</span></span><br><span class="line">        label.text = <span class="type">String</span>(<span class="built_in">count</span>)</span><br><span class="line">        <span class="comment">// ▲▲ ここを追加 ▲▲</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>これでカウント機能が実装できました。Runボタンをクリックしてシュミレーターで確認してみましょう。<br>ボタンをタップしたらラベルがカウントされればOKです。</p>
+<p><img src="https://www.evernote.com/l/AB1NdRyQRDJLg4XK5_vLMfRVg9X5JvjQK6IB/image.png" alt=""></p>
+<p>このように、Swiftを使うと、とっても短いプログラムコードで記述する事ができます。</p>
+<h2 id="Apple_Watchアプリを作ってみよう！">Apple Watchアプリを作ってみよう！</h2><p><img src="https://www.evernote.com/l/AB3vbUNvJKtNVqqpsWnWbhlV8SJr_HJ5Hq8B/image.png" alt=""></p>
+<p>開発のフレームワークであるWatchKitを使用。iPhoneアプリの拡張という位置付け<br><code>Apple Watch単体ではアプリは動きません。</code></p>
+<h3 id="Apple_Watchアプリで出来ること">Apple Watchアプリで出来ること</h3><ul>
+<li>ラベルの表示</li>
+<li>ボタンの表示</li>
+<li>画像の表示</li>
+<li>地図（あくまで表示するだけ）の表示</li>
+<li>タイマー</li>
+<li>セパレータ</li>
+<li>スライダー</li>
+<li>スイッチ</li>
+<li>テーブル（表 ※従来のiPhoneアプリの実装方法とは異なる）</li>
+<li>コンテキストメニュー（画面を長押しすると表示される ※最大4つまでボタンは設定可能）</li>
+<li>セグエによる画面遷移</li>
+<li>iPhone ⇆ Apple Watch間でのデータの受け渡し</li>
+<li>遷移先コントローラーへの値の受け渡し</li>
+<li>iOSアプリの通知を受信して通知（バイブ）</li>
+</ul>
+<h3 id="Apple_Watchアプリで出来ないこと">Apple Watchアプリで出来ないこと</h3><p>下記のように色々とiOSアプリで可能な事が出来ないです。かなり制限されています。</p>
+<ul>
+<li>CGRectMakeメソッドやCGPointMakeメソッドによるパーツの位置指定</li>
+<li>addSubViewのような要素の動的な配置<ul>
+<li>基本的にはstoryboardに要素を配置して、IBOutletでコントローラーとつないでいくスタイルになります。</li>
+</ul>
+</li>
+<li>ピンチインやピンチアウト等による拡大や縮小の動作検知<ul>
+<li>写真や画像系のアプリによくある、あの動作はできません</li>
+</ul>
+</li>
+<li>画像の上に透明なボタンを重ねる<ul>
+<li>このようなことを行う場合には、Groupに背景を入れてその中にボタンを仕込むという感じの実装をしないといけません。</li>
+</ul>
+</li>
+<li>アニメーション<br>  -コマ送りのGIF画像を用意して、NSTimerクラスを利用してパラパラマンガのような形の実装をする形になります。</li>
+</ul>
+<h3 id="Apple_Watch_OS2リリース">Apple Watch OS2リリース</h3><p>2015年のWWDCにてApple Watch OS2について告知がありました。<br>Apple Watch OS2がリリースされる事により、魅力的なApple Watchアプリが作られる事が期待されています。</p>
+<p><img src="https://www.evernote.com/l/AB1-0T6aA5JJ8Jg9oNMeoPUVelp2o4b9ia0B/image.png" alt=""></p>
+<ul>
+<li>Apple Watchのネイティブアプリ化</li>
+<li>時刻と同時表示が可能な通着「コンプリケーション」が開発可能</li>
+<li>HomeKitとの連動</li>
+<li>Watch単体でのWi-Fi接続も可能</li>
+<li>マイク、デジタルクラウン、加速度計やタプティックエンジンの機能がアプリから使える</li>
+<li>文字盤まわりの追加機能</li>
+</ul>
+<h3 id="Apple_Watch開発の流れ">Apple Watch開発の流れ</h3><p>Apple Watch開発の流れを簡単にまとめると下記になります。</p>
+<ol>
+<li>iOSアプリのXcodeプロジェクト作成</li>
+<li>ターゲット追加</li>
+<li>UIデザイン（Interface.storyboard）</li>
+<li>プログラミング（InterfaceController.swift）</li>
+<li>シュミレーターでの動作確認</li>
+<li>実機確認</li>
+</ol>
+<p>それではApple Watchアプリを作っていきましょう。</p>
+<h3 id="ターゲット追加">ターゲット追加</h3><p>「WatchKit App」をターゲットを追加します。<br>下図のとおりに<code>File &gt; New &gt; Target...</code>を選択してください。</p>
+<p><img src="https://www.evernote.com/l/AB3cw170OPhOuY5NjM4_t4d1BhuPVJWXRaUB/image.png" alt=""></p>
+<p>次の画面で下図の①〜③を選び「Next」をクリックします。</p>
+<p><img src="https://www.evernote.com/l/AB0gAz5v9_5DuI1SjZgtjL92SrM0JC7ijaQB/image.png" alt=""></p>
+<p>次の画面では何も変更せず「Finish」をクリックしてください。</p>
+<p><img src="https://www.evernote.com/l/AB1x3sGotVZME75ASCr0tm8Wr_Y_s6aVw2gB/image.png" alt=""></p>
+<p>「Activate」をクリックします。</p>
+<p><img src="https://www.evernote.com/l/AB1rD98Y7rdPUr1AbFliMpX5Ncbtlj6Hp8cB/image.png" alt=""></p>
+<p>下図のとおりApple Watchアプリ関連のファイルが作成されます。</p>
+<p><img src="https://www.evernote.com/l/AB3Yo2k0Q8lLBrfNuedyWlTcNLCtREJn5EkB/image.png" alt=""></p>
+<h3 id="ファイル構成">ファイル構成</h3><table>
+<thead>
+<tr>
+<th>ファイル名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InterfaceController</td>
+<td>Apple Watchアプリの画面プログラムファイル</td>
+</tr>
+<tr>
+<td>NotificationController</td>
+<td>Apple Watch通知のプログラムファイル</td>
+</tr>
+</tbody>
+</table>
+<h3 id="アプリ基本設定-1">アプリ基本設定</h3><h4 id="アプリアイコン設定-1">アプリアイコン設定</h4><p>[アプリ名 WatchKit App]フォルダの中のImages.xcassetsを選択してください。</p>
+<p><img src="https://www.evernote.com/l/AB2rDtX5Z2NDaKleEjNL4yVKk0J8KbA5T5sB/image.png" alt=""></p>
+<p>Apple Watch用のアイコンのサイズ一覧はこちらになります。</p>
+<table>
+<thead>
+<tr>
+<th>アイコン種類</th>
+<th>Apple Watch (38mm)</th>
+<th>Apple Watch (42mm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Notification Center icon</td>
+<td>48px</td>
+<td>55px</td>
+</tr>
+<tr>
+<td>Long-Look notification icon</td>
+<td>80px</td>
+<td>88px</td>
+</tr>
+<tr>
+<td>Home Screen icon</td>
+<td>80px</td>
+<td>80px</td>
+</tr>
+<tr>
+<td>Short-Look icon</td>
+<td>172px</td>
+<td>196px</td>
+</tr>
+</tbody>
+</table>
+<p>アプリは下記からダウンロードしてください。</p>
+<p><a href="https://drive.google.com/file/d/0B-KWga_ya98KaXRyM2FZQWlLY1E/view?usp=sharing" target="_blank" rel="external">Apple Watchアイコンダウンロード</a></p>
+<p>下図のようにアイコンを設定してください。</p>
+<p><img src="https://www.evernote.com/l/AB3MJoTVdVlEC5KbQhJqcn1H2yfWxNywsrAB/image.png" alt=""></p>
+<h3 id="画面デザイン">画面デザイン</h3><p>Interface.storyboardでデザインします。</p>
+<p><img src="https://www.evernote.com/l/AB36Px6PC61NYayhoBdlhxdCbr473R26HhUB/image.png" alt=""></p>
+<h4 id="ラベルの配置-1">ラベルの配置</h4><p>下図のようにラベルを配置してください。</p>
+<p>下図のようにLabelを①Main画面にドラッグし、②Centerにし、③Textを任意にいれてください。</p>
+<p><img src="https://www.evernote.com/l/AB330brJ4vpI7YuX28qAYSj80p8KOluMMiMB/image.png" alt=""></p>
+<h4 id="タイマーの配置">タイマーの配置</h4><p>下図のようにタイマーを配置してください。</p>
+<p><img src="https://www.evernote.com/l/AB0_x1oAXBNKS7reiOJBx7Bb1JneUnOO7XQB/image.png" alt=""></p>
+<h4 id="ボタンの配置-1">ボタンの配置</h4><p>下図のようにボタンを配置してください。</p>
+<p><img src="https://www.evernote.com/l/AB28YC7iGNhDVpjtZI94uPwIjJxYmHgGfnMB/image.png" alt=""></p>
+<h3 id="プログラミング-1">プログラミング</h3><p>それではいよいよApple Watchアプリのプログラミングをしていきます。<br>アプリの画面のプログラミングは<code>InterfaceController.swift</code>のファイルに記述します。</p>
+<h4 id="タイマー機能の実装">タイマー機能の実装</h4><p><code>InterfaceController.swift</code>に<code>ここを追加</code>の部分を追加してください。<br>ここではApple Watchのタイマー機能を使う<code>WKInterfaceTimer</code>を呼び出し、ボタンアクション時に呼ばれるメソッドである<code>buttonTapped</code>の処理の中で、タイマーを10秒にセットし、カウントダウンを開始する処理を実装しています。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="type">WatchKit</span></span><br><span class="line"><span class="keyword">import</span> <span class="type">Foundation</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">InterfaceController</span>: <span class="title">WKInterfaceController</span> </span>&#123;</span><br><span class="line">    <span class="comment">// ▼▼ ここを追加 ▼▼</span></span><br><span class="line">    <span class="comment">// タイマー</span></span><br><span class="line">    <span class="preprocessor">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> timer: <span class="type">WKInterfaceTimer</span>!</span><br><span class="line">    <span class="comment">// ▲▲ ここを追加 ▲▲</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">awakeWithContext</span><span class="params">(context: AnyObject?)</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.awakeWithContext(context)</span><br><span class="line">        <span class="comment">// Configure interface objects here.</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// ▼▼ ここを追加 ▼▼</span></span><br><span class="line">    <span class="preprocessor">@IBAction</span> <span class="func"><span class="keyword">func</span> <span class="title">buttonTapped</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="comment">// タイマーに10秒をセット</span></span><br><span class="line">        <span class="keyword">let</span> date = <span class="type">NSDate</span>().dateByAddingTimeInterval(<span class="number">10</span>)</span><br><span class="line">        timer.setDate(date)</span><br><span class="line">        <span class="comment">// タイマーカウントダウン開始</span></span><br><span class="line">        timer.start()</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ▲▲ ここを追加 ▲▲</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">willActivate</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="comment">// This method is called when watch view controller is about to be visible to user</span></span><br><span class="line">        <span class="keyword">super</span>.willActivate()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="func"><span class="keyword">func</span> <span class="title">didDeactivate</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="comment">// This method is called when watch view controller is no longer visible</span></span><br><span class="line">        <span class="keyword">super</span>.didDeactivate()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="UI要素とプログラムの関連付け-1">UI要素とプログラムの関連付け</h3><h4 id="タイマーの関連付け">タイマーの関連付け</h4><p>下図の①、②の操作でタイマーを関連付けします。</p>
+<p><img src="https://www.evernote.com/l/AB0hCUEF7rBEJItnhOUY7hHx-fiNFZtBArEB/image.png" alt=""></p>
+<h4 id="ボタンアクションの関連付け">ボタンアクションの関連付け</h4><p>下図のとおり、<code>buttonTapped</code>をボタンと関連付けます。</p>
+<p><img src="https://www.evernote.com/l/AB2IZODfgwRPsLNEDd06Pj-0evkWWKsBNMUB/image.png" alt=""></p>
+<h3 id="動作確認-1">動作確認</h3><p>それではRunボタンをクリックしてシュミレーターを起動してください。<br>シュミレーターが起動したら、下図のように<code>Hardware &gt; External Display &gt; Apple Watch - 36mm</code>を選んでください。</p>
+<p><img src="https://www.evernote.com/l/AB0KlML4HPZIv6w3VCaInw7z_MsxyPKYu5AB/image.png" alt=""></p>
+<p>下記のようにApple Watch用のシュミレーターが起動します。</p>
+<p><img src="https://www.evernote.com/l/AB1zjsHrq9FJRbDeGsty_JOacpPi9QA9GLkB/image.png" alt=""></p>
+<p>Apple Watchアプリを起動させるためには、下図①、②のとおりターゲットをApple WatchアプリにしてRunボタンをクリックします。</p>
+<p><img src="https://www.evernote.com/l/AB2hD-cxbl1Iu73Xz8F4spC0bBDyQlIkGAsB/image.png" alt=""></p>
+<p>下図のようにアプリが起動すると思いますので、ボタンをタップしてカウンターが動くか確認してみてください。</p>
+<p><img src="https://www.evernote.com/l/AB0M0du3a9ZBmIw1yM1dh8pUpKv1y5q7SpYB/image.png" alt=""></p>
+<p>いかがでしたでしょうか。Apple Watchアプリはとても簡単に作れた事が体験できたと思います。</p>
+<h3 id="ちょっと高度なApple_Watchアプリ">ちょっと高度なApple Watchアプリ</h3><h4 id="iOSアプリとのデータ連携">iOSアプリとのデータ連携</h4><p>iOSアプリとデータ連携する場合は<code>WKInterfaceController.openParentApplication</code>を使い、iOSアプリ側にデータを送ります。<br>※ データを送る場合にはディクショナリー型で送る必要があります。</p>
+<p>InterfaceController.swift</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">@IBAction</span> <span class="func"><span class="keyword">func</span> <span class="title">buttonTapped</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> info = [<span class="string">"text"</span>: <span class="string">"complete"</span>]</span><br><span class="line">    <span class="type">WKInterfaceController</span>.openParentApplication(</span><br><span class="line">        info,</span><br><span class="line">        reply:&#123; (data, error) <span class="keyword">in</span></span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">let</span> error = error &#123;</span><br><span class="line">                <span class="comment">// 応答 失敗 ["response" : "fail"]</span></span><br><span class="line">                <span class="built_in">println</span>(<span class="string">"watch send error:<span class="subst">\(error)</span>"</span>)</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">let</span> data = data &#123;</span><br><span class="line">                <span class="comment">// 応答 成功 [response: success]</span></span><br><span class="line">                <span class="built_in">println</span>(<span class="string">"watch send success:<span class="subst">\(data)</span>"</span>)</span><br><span class="line">            &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>iOSアプリ側でデータを取得する場合には<code>AppDelegate.swift</code>に<code>handleWatchKitExtensionRequest</code>のメソッドを追加する事により受け取れます。<br>下記では今作ったアプリのボタンタップ時にiOSアプリ側にデータを送る場合のサンプルコードです。</p>
+<p>AppDelegate.swift</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="func"><span class="keyword">func</span> <span class="title">application</span><span class="params">(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: <span class="params">(<span class="params">([NSObject : AnyObject]!)</span></span></span></span> -&gt; <span class="type">Void</span>)!) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"app received"</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">let</span> info = userInfo <span class="keyword">as</span>? [<span class="type">String</span>: <span class="type">String</span>] &#123;</span><br><span class="line">        <span class="built_in">println</span>(<span class="string">"info: <span class="subst">\(info)</span>"</span>)</span><br><span class="line">        reply([<span class="string">"replay"</span>:<span class="string">"ok"</span>])</span><br><span class="line">        <span class="keyword">var</span> appDelegate = <span class="type">UIApplication</span>.sharedApplication().delegate <span class="keyword">as</span>! <span class="type">AppDelegate</span></span><br><span class="line">        <span class="comment">// ViewControllerのラベルを更新</span></span><br><span class="line">        <span class="keyword">var</span> vc:<span class="type">ViewController</span>? = appDelegate.window?.rootViewController <span class="keyword">as</span>? <span class="type">ViewController</span></span><br><span class="line">        vc?.label.text = info[<span class="string">"text"</span>]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="文字入力">文字入力</h4><p>apple watchではiPhoneなどのようにキーボードで文字入力を行うことが出来ません。<br>候補の中から選択、あるいは音声入力によって行うようになっています。<br>下記では今作ったアプリのボタンタップ時に文字入力画面を表示させる場合のサンプルコードです。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">@IBAction</span> <span class="func"><span class="keyword">func</span> <span class="title">buttonTapped</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="comment">//入力画面を開く</span></span><br><span class="line">    presentTextInputControllerWithSuggestions(</span><br><span class="line">        [<span class="string">"テキスト1"</span>, <span class="string">"テキスト2"</span>], <span class="comment">// 入力候補（suggestions）</span></span><br><span class="line">        allowedInputMode: .<span class="type">Plain</span>, <span class="comment">// 入力モード</span></span><br><span class="line">        completion: &#123; (str) -&gt; <span class="type">Void</span> <span class="keyword">in</span> <span class="comment">// 完了時</span></span><br><span class="line">            <span class="keyword">if</span> str != <span class="built_in">nil</span> &#123;</span><br><span class="line">                <span class="comment">// 取得したデータをString型に変換</span></span><br><span class="line">                <span class="keyword">var</span> val = <span class="type">String</span>(stringInterpolationSegment: str)</span><br><span class="line">                <span class="keyword">var</span> info = [<span class="string">"text"</span>: val]</span><br><span class="line">                <span class="type">WKInterfaceController</span>.openParentApplication(</span><br><span class="line">                    info,</span><br><span class="line">                    reply:&#123; (data, error) <span class="keyword">in</span></span><br><span class="line">                        <span class="keyword">if</span> <span class="keyword">let</span> error = error &#123;</span><br><span class="line">                            <span class="comment">// 応答 失敗 ["response" : "fail"]</span></span><br><span class="line">                            <span class="built_in">println</span>(<span class="string">"watch send error:<span class="subst">\(error)</span>"</span>)</span><br><span class="line">                        &#125;</span><br><span class="line">                        <span class="keyword">if</span> <span class="keyword">let</span> data = data &#123;</span><br><span class="line">                            <span class="comment">// 応答 成功 [response: success]</span></span><br><span class="line">                            <span class="built_in">println</span>(<span class="string">"watch send success:<span class="subst">\(data)</span>"</span>)</span><br><span class="line">                        &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="最後に">最後に</h2><p>お疲れ様でした。SwiftでのiOSアプリ開発、Apple Watch開発はいかがでしたでしょうか。<br>これからもどんどん進化していくiOS、Apple Watchのアプリ開発を始めるきっかけになれれば幸いです。</p>
+<h2 id="（参考）Apple_Watch関連ページ">（参考）Apple Watch関連ページ</h2><p>これができない！Apple watch</p>
+<p><a href="http://www.slideshare.net/SatoTakeshi/apple-watch-44815797" target="_blank" rel="external">http://www.slideshare.net/SatoTakeshi/apple-watch-44815797</a></p>
+<p>【WatchKit】Apple Watch アプリのつくり方 &amp; 全API解説</p>
+<p><a href="http://d.hatena.ne.jp/shu223/20141119/1416374576" target="_blank" rel="external">http://d.hatena.ne.jp/shu223/20141119/1416374576</a></p>
+<p>Watch Kit APIリファレンス</p>
+<p><a href="https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WatchKit_framework/index.html#//apple_ref/doc/uid/TP40014968" target="_blank" rel="external">https://developer.apple.com/library/prerelease/ios/documentation/WatchKit/Reference/WatchKit_framework/index.html#//apple_ref/doc/uid/TP40014968</a></p>
+<p>公式ドキュメント</p>
+<p><a href="https://developer.apple.com/watchkit/" target="_blank" rel="external">https://developer.apple.com/watchkit/</a></p>
+<p>まとめ記事</p>
+<p><a href="http://dev.classmethod.jp/hardware/apple-watch/develop-watchkit-apps/" target="_blank" rel="external">http://dev.classmethod.jp/hardware/apple-watch/develop-watchkit-apps/</a></p>
+<p>ライフサイクル</p>
+<p><a href="http://blog.haranicle.net/applewatchapp_lifecycle/" target="_blank" rel="external">http://blog.haranicle.net/applewatchapp_lifecycle/</a></p>
+<p>Apple Watchアプリリリース状況（6月8日時点で6000アプリを超える）</p>
+<p><a href="http://iphone-mania.jp/news-74329/" target="_blank" rel="external">http://iphone-mania.jp/news-74329/</a></p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/07/12/orientation/orien/"></a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/06/20/swift-taiken/">iOSアプリ（Swift）体験 & Apple Watchアプリ体験</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+      <div class="comments" id="comments">
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://terakoya-web.com/wp-content/themes/terakoya/images/logo3.png" alt="オンライン学習 TERAKOYA" />
+          <p class="site-author-name">オンライン学習 TERAKOYA</p>
+        </div>
+        
+        <p class="site-description motion-element">Webもアプリも会社経営も何でもやってます。</p>
+
+        
+        <div class="site-state motion-element">
+          
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+          
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">categories</span>
+              </a>
+          </div>
+          
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+        </div>
+
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/HTML基本/">HTML基本</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Swift/">Swift</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/はじめに/">はじめに</a><span class="category-list-count">1</span></li></ul>
+
+
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#iOSアプリ（Swift）体験_&_Apple_Watchアプリ体験"><span class="nav-number">1.</span> <span class="nav-text">iOSアプリ（Swift）体験 & Apple Watchアプリ体験</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Swiftについて"><span class="nav-number">1.1.</span> <span class="nav-text">Swiftについて</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Swiftとは"><span class="nav-number">1.1.1.</span> <span class="nav-text">Swiftとは</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Swiftの特徴"><span class="nav-number">1.1.2.</span> <span class="nav-text">Swiftの特徴</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SwiftでiOSアプリ開発体験"><span class="nav-number">1.2.</span> <span class="nav-text">SwiftでiOSアプリ開発体験</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#アプリ開発の流れ"><span class="nav-number">1.2.1.</span> <span class="nav-text">アプリ開発の流れ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Xcodeを起動"><span class="nav-number">1.2.2.</span> <span class="nav-text">Xcodeを起動</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#アプリ基本設定"><span class="nav-number">1.2.3.</span> <span class="nav-text">アプリ基本設定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#アプリアイコン設定"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">アプリアイコン設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#アプリアイコンのサイズ設定"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">アプリアイコンのサイズ設定</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#アイコン"><span class="nav-number">1.2.3.2.1.</span> <span class="nav-text">アイコン</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#設定画面用アイコン"><span class="nav-number">1.2.3.2.2.</span> <span class="nav-text">設定画面用アイコン</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Spotlight用アイコン"><span class="nav-number">1.2.3.2.3.</span> <span class="nav-text">Spotlight用アイコン</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#スプラッシュ"><span class="nav-number">1.2.3.2.4.</span> <span class="nav-text">スプラッシュ</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#画面の傾き"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">画面の傾き</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ホーム画面のアプリタイトル"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">ホーム画面のアプリタイトル</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#アプリの画面デザイン"><span class="nav-number">1.2.4.</span> <span class="nav-text">アプリの画面デザイン</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#メイン画面デザイン"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">メイン画面デザイン</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#背景画像を配置"><span class="nav-number">1.2.4.2.</span> <span class="nav-text">背景画像を配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Auto_layoutでの画面配置"><span class="nav-number">1.2.4.2.1.</span> <span class="nav-text">Auto layoutでの画面配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#画面のプレビュー"><span class="nav-number">1.2.4.2.2.</span> <span class="nav-text">画面のプレビュー</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ラベルの配置"><span class="nav-number">1.2.4.3.</span> <span class="nav-text">ラベルの配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ボタンの配置"><span class="nav-number">1.2.4.4.</span> <span class="nav-text">ボタンの配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#プログラミング"><span class="nav-number">1.2.5.</span> <span class="nav-text">プログラミング</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ラベルの関連付け"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">ラベルの関連付け</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ボタンタップでラベルが表示・非表示"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">ボタンタップでラベルが表示・非表示</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UI要素とプログラムの関連付け"><span class="nav-number">1.2.6.</span> <span class="nav-text">UI要素とプログラムの関連付け</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#動作確認"><span class="nav-number">1.2.7.</span> <span class="nav-text">動作確認</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#カウンタ機能"><span class="nav-number">1.2.8.</span> <span class="nav-text">カウンタ機能</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#プログラムでラベルを編集"><span class="nav-number">1.2.8.1.</span> <span class="nav-text">プログラムでラベルを編集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#カウント機能の実装"><span class="nav-number">1.2.8.2.</span> <span class="nav-text">カウント機能の実装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Apple_Watchアプリを作ってみよう！"><span class="nav-number">1.3.</span> <span class="nav-text">Apple Watchアプリを作ってみよう！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple_Watchアプリで出来ること"><span class="nav-number">1.3.1.</span> <span class="nav-text">Apple Watchアプリで出来ること</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple_Watchアプリで出来ないこと"><span class="nav-number">1.3.2.</span> <span class="nav-text">Apple Watchアプリで出来ないこと</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple_Watch_OS2リリース"><span class="nav-number">1.3.3.</span> <span class="nav-text">Apple Watch OS2リリース</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apple_Watch開発の流れ"><span class="nav-number">1.3.4.</span> <span class="nav-text">Apple Watch開発の流れ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ターゲット追加"><span class="nav-number">1.3.5.</span> <span class="nav-text">ターゲット追加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ファイル構成"><span class="nav-number">1.3.6.</span> <span class="nav-text">ファイル構成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#アプリ基本設定-1"><span class="nav-number">1.3.7.</span> <span class="nav-text">アプリ基本設定</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#アプリアイコン設定-1"><span class="nav-number">1.3.7.1.</span> <span class="nav-text">アプリアイコン設定</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#画面デザイン"><span class="nav-number">1.3.8.</span> <span class="nav-text">画面デザイン</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ラベルの配置-1"><span class="nav-number">1.3.8.1.</span> <span class="nav-text">ラベルの配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#タイマーの配置"><span class="nav-number">1.3.8.2.</span> <span class="nav-text">タイマーの配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ボタンの配置-1"><span class="nav-number">1.3.8.3.</span> <span class="nav-text">ボタンの配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#プログラミング-1"><span class="nav-number">1.3.9.</span> <span class="nav-text">プログラミング</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#タイマー機能の実装"><span class="nav-number">1.3.9.1.</span> <span class="nav-text">タイマー機能の実装</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UI要素とプログラムの関連付け-1"><span class="nav-number">1.3.10.</span> <span class="nav-text">UI要素とプログラムの関連付け</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#タイマーの関連付け"><span class="nav-number">1.3.10.1.</span> <span class="nav-text">タイマーの関連付け</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ボタンアクションの関連付け"><span class="nav-number">1.3.10.2.</span> <span class="nav-text">ボタンアクションの関連付け</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#動作確認-1"><span class="nav-number">1.3.11.</span> <span class="nav-text">動作確認</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ちょっと高度なApple_Watchアプリ"><span class="nav-number">1.3.12.</span> <span class="nav-text">ちょっと高度なApple Watchアプリ</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#iOSアプリとのデータ連携"><span class="nav-number">1.3.12.1.</span> <span class="nav-text">iOSアプリとのデータ連携</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文字入力"><span class="nav-number">1.3.12.2.</span> <span class="nav-text">文字入力</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最後に"><span class="nav-number">1.4.</span> <span class="nav-text">最後に</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（参考）Apple_Watch関連ページ"><span class="nav-number">1.5.</span> <span class="nav-text">（参考）Apple Watch関連ページ</span></a></li></ol></li></ol></div>
+              <div>
+                
+              </div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp; 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">オンライン学習 TERAKOYA</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.content img').each(function () {
+        var $image = $(this);
+        var $imageWrapLink = $image.parent('a');
+
+        if ($imageWrapLink.size() < 1) {
+          $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
+        }
+        $imageWrapLink.addClass('fancybox');
+      });
+    });
+    $('.fancybox').fancybox({
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    });
+  </script>
+
+
+  <script type="text/javascript">
+  function hasMobileUA () {
+    var nav = window.navigator;
+    var ua = nav.userAgent;
+    var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
+
+    return pa.test(ua);
+  }
+
+  function isDesktop () {
+    return screen.width > 991 && !hasMobileUA();
+  }
+
+  function isTablet () {
+    return screen.width < 992 && screen.width > 767 && hasMobileUA();
+  }
+
+  function isMobile () {
+    return screen.width < 767 && hasMobileUA();
+  }
+
+  function escapeSelector (selector) {
+    return selector.replace(/[!"$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")
+  }
+</script>
+
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" id="motion.global">
+  $(document).ready(function () {
+    var body = $('body');
+    var isSidebarVisible = false;
+    var sidebarToggle = $('.sidebar-toggle');
+    var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
+    var sidebarToggleLine2nd = $('.sidebar-toggle-line-middle');
+    var sidebarToggleLine3rd = $('.sidebar-toggle-line-last');
+    var sidebar = $('.sidebar');
+
+    var SIDEBAR_WIDTH = '320px';
+    var SIDEBAR_DISPLAY_DURATION = 300;
+
+    var sidebarToogleLineStatusInit = {width: '100%', opacity: 1, left: 0, rotateZ: 0, top: 0};
+
+    var sidebarToggleLine1stStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine1stStatusArrow = {width: '50%', rotateZ: '-45deg', top: '2px'};
+    var sidebarToogleLine1stStatusClose = {width: '100%', rotateZ: '-45deg', top: '5px'};
+
+    var sidebarToggleLine2ndStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine2ndStatusArrow = {width: '90%'};
+    var sidebarToogleLine2ndStatusClose = {opacity: 0};
+
+    var sidebarToggleLine3rdStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine3rdStatusArrow = {width: '50%', rotateZ: '45deg', top: '-2px'};
+    var sidebarToogleLine3rdStatusClose = {width: '100%', rotateZ: '45deg', top: '-5px'};
+
+    LogoAndMenuMotion();
+    sidebatToggleMotion();
+    postsListMotion();
+    backToTopMotion();
+
+
+    $(document)
+      .on('sidebar.isShowing', function () {
+        isDesktop() && body.velocity(
+          {paddingRight: SIDEBAR_WIDTH},
+          SIDEBAR_DISPLAY_DURATION
+        );
+        sidebarContentMotion();
+      })
+      .on('sidebar.isHiding', function () {});
+
+    function LogoAndMenuMotion() {
+      $.Velocity.RunSequence([
+        { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
+        { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        
+        { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
+      ]);
+      $('.menu-item').velocity('transition.slideDownIn', {display: null});
+    }
+
+
+    function backToTopMotion () {
+      var b2top = $('.back-to-top');
+      b2top.on('click', function () {
+        body.velocity('scroll');
+      });
+    }
+
+    function sidebarShowMotion () {
+
+      sidebarToggleLine1st.velocity(sidebarToogleLine1stStatusClose);
+      sidebarToggleLine2nd.velocity(sidebarToogleLine2ndStatusClose);
+      sidebarToggleLine3rd.velocity(sidebarToogleLine3rdStatusClose);
+
+      sidebar.velocity({width: SIDEBAR_WIDTH}, {
+        display: 'block',
+        duration: SIDEBAR_DISPLAY_DURATION,
+        complete: function () {
+          sidebar.addClass('sidebar-active');
+          sidebar.trigger('sidebar.didShow');
+        }
+      });
+      sidebar.trigger('sidebar.isShowing');
+    }
+
+    function sidebarHideMotion () {
+      isDesktop() && body.velocity({paddingRight: 0});
+      sidebar.velocity('reverse');
+
+      sidebarToggleLine1st.velocity(sidebarToggleLine1stStatusInit);
+      sidebarToggleLine2nd.velocity(sidebarToggleLine2ndStatusInit);
+      sidebarToggleLine3rd.velocity(sidebarToggleLine3rdStatusInit);
+
+      sidebar.removeClass('sidebar-active');
+      sidebar.trigger('sidebar.isHiding');
+    };
+
+    function sidebarContentMotion () {
+      $('.sidebar .motion-element').velocity(
+        'transition.slideRightIn',
+        {stagger: 50, drag: true}
+      );
+    }
+
+    function postsListMotion () {
+      var postMotionOptions = window.postMotionOptions || {stagger: 300, drag: true};
+      $('.post').velocity('transition.slideDownIn', postMotionOptions);
+    }
+
+    function sidebatToggleMotion () {
+      sidebarToggle.on('click', function () {
+        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+        isSidebarVisible = !isSidebarVisible;
+      });
+
+      sidebarToggle.hover(function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusArrow);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusArrow);
+      }, function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusInit);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusInit);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusInit);
+      });
+    }
+  });
+
+</script>
+
+
+
+
+
+  
+  
+<script type="text/javascript" id="bootstrap.scrollspy.custom">
+  /* ========================================================================
+  * Bootstrap: scrollspy.js v3.3.2
+  * http://getbootstrap.com/javascript/#scrollspy
+  * ========================================================================
+  * Copyright 2011-2015 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * ======================================================================== */
+
+  /**
+   * Custom by iissnan
+   *
+   * - Add a `clear.bs.scrollspy` event.
+   * - Esacpe targets selector.
+   */
+
+
+  +function ($) {
+    'use strict';
+
+    // SCROLLSPY CLASS DEFINITION
+    // ==========================
+
+    function ScrollSpy(element, options) {
+      this.$body          = $(document.body)
+      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+      this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
+      this.selector       = (this.options.target || '') + ' .nav li > a'
+      this.offsets        = []
+      this.targets        = []
+      this.activeTarget   = null
+      this.scrollHeight   = 0
+
+      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+      this.refresh()
+      this.process()
+    }
+
+    ScrollSpy.VERSION  = '3.3.2'
+
+    ScrollSpy.DEFAULTS = {
+      offset: 10
+    }
+
+    ScrollSpy.prototype.getScrollHeight = function () {
+      return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+    }
+
+    ScrollSpy.prototype.refresh = function () {
+      var that          = this
+      var offsetMethod  = 'offset'
+      var offsetBase    = 0
+
+      this.offsets      = []
+      this.targets      = []
+      this.scrollHeight = this.getScrollHeight()
+
+      if (!$.isWindow(this.$scrollElement[0])) {
+        offsetMethod = 'position'
+        offsetBase   = this.$scrollElement.scrollTop()
+      }
+
+      this.$body
+        .find(this.selector)
+        .map(function () {
+          var $el   = $(this)
+          var href  = $el.data('target') || $el.attr('href')
+          var $href = /^#./.test(href) && $(escapeSelector(href)) // Need to escape selector.
+
+          return ($href
+            && $href.length
+            && $href.is(':visible')
+            && [[$href[offsetMethod]().top + offsetBase, href]]) || null
+        })
+        .sort(function (a, b) { return a[0] - b[0] })
+        .each(function () {
+          that.offsets.push(this[0])
+          that.targets.push(this[1])
+        })
+
+
+    }
+
+    ScrollSpy.prototype.process = function () {
+      var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
+      var scrollHeight = this.getScrollHeight()
+      var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
+      var offsets      = this.offsets
+      var targets      = this.targets
+      var activeTarget = this.activeTarget
+      var i
+
+      if (this.scrollHeight != scrollHeight) {
+        this.refresh()
+      }
+
+      if (scrollTop >= maxScroll) {
+        return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
+      }
+
+      if (activeTarget && scrollTop < offsets[0]) {
+        $(this.selector).trigger('clear.bs.scrollspy')  // Add a custom event.
+        this.activeTarget = null
+        return this.clear()
+      }
+
+      for (i = offsets.length; i--;) {
+        activeTarget != targets[i]
+          && scrollTop >= offsets[i]
+          && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
+          && this.activate(targets[i])
+      }
+    }
+
+    ScrollSpy.prototype.activate = function (target) {
+      this.activeTarget = target
+
+      this.clear()
+
+      var selector = this.selector +
+        '[data-target="' + target + '"],' +
+        this.selector + '[href="' + target + '"]'
+
+      var active = $(selector)
+        .parents('li')
+        .addClass('active')
+
+      if (active.parent('.dropdown-menu').length) {
+        active = active
+          .closest('li.dropdown')
+          .addClass('active')
+      }
+
+      active.trigger('activate.bs.scrollspy')
+    }
+
+    ScrollSpy.prototype.clear = function () {
+      $(this.selector)
+        .parentsUntil(this.options.target, '.active')
+        .removeClass('active')
+    }
+
+
+    // SCROLLSPY PLUGIN DEFINITION
+    // ===========================
+
+    function Plugin(option) {
+      return this.each(function () {
+        var $this   = $(this)
+        var data    = $this.data('bs.scrollspy')
+        var options = typeof option == 'object' && option
+
+        if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
+        if (typeof option == 'string') data[option]()
+      })
+    }
+
+    var old = $.fn.scrollspy
+
+    $.fn.scrollspy             = Plugin
+    $.fn.scrollspy.Constructor = ScrollSpy
+
+
+    // SCROLLSPY NO CONFLICT
+    // =====================
+
+    $.fn.scrollspy.noConflict = function () {
+      $.fn.scrollspy = old
+      return this
+    }
+
+
+    // SCROLLSPY DATA-API
+    // ==================
+
+    $(window).on('load.bs.scrollspy.data-api', function () {
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this)
+        Plugin.call($spy, $spy.data())
+      })
+    })
+
+  }(jQuery);
+</script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0 && isDesktop()) {
+        setTimeout(function () {
+          $('.sidebar-toggle').trigger('click');
+        }, 800);
+      }
+    });
+  </script>
+
+
+
+
+  
+
+  
+  
+  
+
+  
+
+
+
+
+  
+</body>
+</html>
