@@ -1,0 +1,916 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.2"/>
+
+
+    <meta name="description" content="Webもアプリも会社経営も何でもやってます。" />
+
+
+
+  <meta name="keywords" content="Wordpress," />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.2" />
+
+
+
+
+  <title> Wordpressオリジナルテーマ作成 // TERAKOYA </title>
+</head>
+
+<body>
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+    
+    
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              Wordpressオリジナルテーマ作成
+            
+          
+        </h1>
+      
+
+     
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <a id="more"></a>
+<p>これからwordpressでテーマを作成していきます。</p>
+<h2 id="テーマファイルの作成の流れ">テーマファイルの作成の流れ</h2><ul>
+<li>テーマ用フォルダの作成（wp-content/themesの中）</li>
+<li>style.css作成</li>
+<li>index.phpの作成</li>
+<li>header.phpの作成</li>
+<li>footer.phpの作成</li>
+<li>page.phpの作成</li>
+<li>post.phpの作成</li>
+<li>sidebar.phpの作成</li>
+<li>searchform.phpの作成</li>
+<li>category.phpの作成</li>
+<li>comment.phpの作成</li>
+</ul>
+<h2 id="テーマファイルフォルダ作成">テーマファイルフォルダ作成</h2><p>まず初めにテーマ用のフォルダを作成します。<br><code>wp-content/themes</code>の中に<code>test-theme</code>の名前でフォルダを作成してください。</p>
+<p><img src="https://www.evernote.com/l/AB24ApHXrdlOgZ1oyR1BW13mqhazkNCGQg8B/image.png" alt=""></p>
+<p>作成したら次に進んでください。</p>
+<h2 id="style-cssファイル作成">style.cssファイル作成</h2><p>Wordpressのテーマにおいて、style.cssファイルはとても大事なファイルで、一番最初に作らないといけません。<br><code>wp-content/themes/test-theme</code>の中に<code>style.css</code>の名前でファイルを作成してください。</p>
+<p><img src="https://www.evernote.com/l/AB2Pxo_M3rlKg5U8cG6sQhVrnEGW6NfrgG0B/image.png" alt=""></p>
+<p>作成したら下記のようにコメントを入れてください。<br>※このコメントは非常に大事なので必ず入れてください。＜＞の部分は任意に入れてください。</p>
+<p>style.css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line">Theme Name: ＜テーマ名＞</span><br><span class="line">Theme URI: ＜テーマを紹介しているページのURL＞</span><br><span class="line">Description: ＜テーマの説明＞</span><br><span class="line">Version: ＜バージョン（ベータ版などは0.x、本番用は1.x以上を指定）＞</span><br><span class="line">Author: ＜テーマ作者の名前＞</span><br><span class="line">Author URI: ＜テーマ作者の情報がわかるページのURL＞</span><br><span class="line">*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="index-phpの作成">index.phpの作成</h2><p>次にindex.phpを作成します。<br><code>wp-content/themes/test-theme</code>の中に<code>index.php</code>の名前でファイルを作成してください。<br>とりあえずindex.phpの中にはタイトルを入れておいてください。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Hello Wordpress!!<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>この状態ですでにオリジナルのテーマが作成されていて、Wordpressの管理画面から選択できるようになっています。確認してみましょう。</p>
+<p>管理画面で<code>外観 -&gt; テーマ</code>を選択してください。</p>
+<p><img src="https://www.evernote.com/l/AB0SQRY1waBLPp3QN6muL6lewqO2aStTkl8B/image.png" alt=""></p>
+<p>このように簡単にWordpressのテーマは作成できます。自分のテーマを有効にしておきましょう。</p>
+<p><img src="https://www.evernote.com/l/AB2P3391GGtHgbQaJOWxxCK_xl5ltHglldUB/image.png" alt=""></p>
+<h2 id="ヘッダーパーツ（header-php）の作成">ヘッダーパーツ（header.php）の作成</h2><p>次にheader.phpを作成します。header.phpにはHTMLのヘッダー部分（headタグ）の部分などを記述します。<br>今回はBootstrapを使ってテーマを作成するので、BootstrapのCSSファイルを読み込んでおいてください。</p>
+<p>header.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"ja"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- ページタイトル --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'name'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- ページ説明 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">name</span>=<span class="value">"description"</span> <span class="attribute">content</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'description'</span>); <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"alternate"</span> <span class="attribute">type</span>=<span class="value">"application/rss+xml"</span> <span class="attribute">title</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'name'</span>); <span class="preprocessor">?&gt;</span></span> RSSフィード"</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'rss2_url'</span>); <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Bootstrap --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- カスタムCSS --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> bloginfo( <span class="string">'stylesheet_url'</span> ); <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> wp_head(); <span class="comment">// Wordoress用のヘッダー関数 ?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Navigation --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-default navbar-fixed-top"</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"navbar-header"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"navbar-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"collapse"</span> <span class="attribute">data-target</span>=<span class="value">"#bs-example-navbar-collapse-1"</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>Toggle navigation<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">button</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"navbar-brand"</span> <span class="attribute">href</span>=<span class="value">"index.html"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'name'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"collapse navbar-collapse"</span> <span class="attribute">id</span>=<span class="value">"bs-example-navbar-collapse-1"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav navbar-nav navbar-right"</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>メニュー1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>メニュー2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>メニュー3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.navbar-collapse --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.container --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">nav</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="フッターパーツ（footer-php）の作成">フッターパーツ（footer.php）の作成</h2><p>次はfooter.phpファイルです。このファイルでWordpressサイトのフッター部分のHTMLやPHPコードを入力します。</p>
+<p>footer.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> wp_footer(); <span class="comment">// Wordoress用のフッター関数 ?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>共通部分のパーツ（header.php、footer.php）が作成できましたので、サイトトップ用のindex.phpにそのパーツを読み込むようにします。<code>get_header()</code>はheader.phpを読み込み、<code>get_footer()</code>はフッターを読み込みます。</p>
+<p>index.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_header(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Hello Wordpress!!<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_footer(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>この状態でサイトトップにアクセスしてみましょう。Bootstrapが動いていて、ナビゲーションメニューが表示されていると思います。</p>
+<h2 id="固定ページ（page-php）の作成">固定ページ（page.php）の作成</h2><p>次にWordpressで作成できる固定ページのテンプレートを作成します。</p>
+<p>page.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_header(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> <span class="comment">// WPから該当する個別ページデータ取得 ?&gt;</span></span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> ( have_posts() ) : <span class="keyword">while</span> ( have_posts() ) : the_post(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;<span class="title">h1</span> <span class="attribute">class</span>=<span class="value">"col-md-12 page-title"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_title(); <span class="comment">// 個別ページのタイトル ?&gt;</span></span><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"page col-md-8 col-sm-8"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"entry"</span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> the_content(); <span class="comment">// 個別ページのコンテンツ ?&gt;</span></span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">article</span>&gt;</span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endwhile</span>; <span class="keyword">else</span>: <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;<span class="title">article</span> <span class="attribute">class</span>=<span class="value">"page col-md-8 col-sm-8 not-found"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"entry"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"lead"</span>&gt;</span>このページは存在しません。<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> get_search_form(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">article</span>&gt;</span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endif</span>; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-4 col-sm-4"</span>&gt;</span></span><br><span class="line">      <span class="php"><span class="preprocessor">&lt;?php</span> get_sidebar(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .row --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .container --&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_footer(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>レイアウトが崩れないようにstyle.cssに下記を加えておきましょう。</p>
+<p>style.css</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="id">#main</span><span class="rules">&#123; <span class="rule"><span class="attribute">margin-top</span>:<span class="value"><span class="number">60px</span></span></span>; &#125;</span></span><br></pre></td></tr></table></figure>
+<p>上記のコードにある<code>&lt;?php get_sidebar(); ?&gt;</code>は、サイドメニューのパーツを表示させます。<br>次にサイドメニューのパーツを表示させます。</p>
+<h2 id="サイドメニュー（sidebar-php）の作成">サイドメニュー（sidebar.php）の作成</h2><p>次にサイドバーのパーツであるsidebar.phpを作成します。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"sidebar"</span> <span class="attribute">role</span>=<span class="value">"complementary"</span>&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="keyword">if</span>(is_active_sidebar(<span class="string">"sidebar1"</span>))&#123;</span><br><span class="line">  dynamic_sidebar(<span class="string">"sidebar1"</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>それでは画面を表示させてみましょう。<br>管理画面に戻って<code>固定ページ -&gt; 固定ページ一覧</code>を選択して下記の画面を表示させ、「Sample Page」の箇所にカーソルを合わせ「表示」のリンクをクリックしてください。</p>
+<p><img src="https://www.evernote.com/l/AB26XeUvC0dOzbmfL0tb57r3lj8r4vdehBoB/image.png" alt=""></p>
+<p>下記のように表示されていればOKです。</p>
+<p><img src="https://www.evernote.com/l/AB1oWaWxcRZCSaZpRzA-gGlHPYv7CIWUp-UB/image.png" alt=""></p>
+<h2 id="固定ページの編集">固定ページの編集</h2><p>それでは固定ページを編集してみましょう。</p>
+<p><img src="https://www.evernote.com/l/AB2DkrRFUVVILJmedHFeNwfy_g-yNGjKwKMB/image.png" alt=""></p>
+<h3 id="やってみよう">やってみよう</h3><p>固定ページを新規作成して下記ページを作成してください。</p>
+<ul>
+<li>サービス</li>
+<li>お問い合わせ</li>
+</ul>
+<h2 id="サイドメニューにウィジットを表示">サイドメニューにウィジットを表示</h2><p><code>Widget</code> とは「小さな部品」という意味です。WordPressでよくWidgetが使われる場面には、サイドバーの「カレンダー」、「アーカイブ」、「検索」などがありますね。<br>ただ、これらの部品は別にWidgetを使わなくても、コードを書けば実現できるわけです。では、どうしてわざわざWidgetにするのでしょうか。</p>
+<p>ウィジットを追加するには<code>functions.php</code>ファイルをテーマ内に作成し、その中に下記のプログラムを入れる必要があります。</p>
+<p>functions.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="comment">// ウィジットの登録</span></span><br><span class="line"><span class="keyword">if</span> (function_exists(<span class="string">'register_sidebar'</span>)) &#123;</span><br><span class="line">   register_sidebar(<span class="keyword">array</span>(</span><br><span class="line">    <span class="string">'name'</span> =&gt; <span class="string">'サイドバー1'</span>, <span class="comment">// ウィジェット名</span></span><br><span class="line">    <span class="string">'id'</span> =&gt; <span class="string">'sidebar1'</span>, <span class="comment">// ウィジェットのID</span></span><br><span class="line">    <span class="string">'description'</span> =&gt; <span class="string">'説明1'</span>, <span class="comment">// ウィジェットの説明</span></span><br><span class="line">    <span class="string">'before_widget'</span> =&gt; <span class="string">'&lt;div&gt;'</span>, <span class="comment">// ウィジェットを囲む開始タグ</span></span><br><span class="line">    <span class="string">'after_widget'</span> =&gt; <span class="string">'&lt;/div&gt;'</span>, <span class="comment">// ウィジェットを囲む終了タグ</span></span><br><span class="line">    <span class="string">'before_title'</span> =&gt; <span class="string">'&lt;h3&gt;'</span>, <span class="comment">// ウィジェットのタイトルを囲む開始タグ</span></span><br><span class="line">    <span class="string">'after_title'</span> =&gt; <span class="string">'&lt;/h3&gt;'</span> <span class="comment">// ウィジェットのタイトルを囲む終了タグ</span></span><br><span class="line">  ));</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>そうすると管理画面の<code>外観</code>のメニューの中に<code>ウィジット</code>が表示されます。</p>
+<p><img src="https://www.evernote.com/l/AB2U1HMXgFdEOL8er5FmI8NTXO4OFYwznRkB/image.png" alt=""></p>
+<p>下図のようにお好みのウィジットをドラックして追加する事ができます。</p>
+<p><img src="https://www.evernote.com/l/AB2bdSLdAYZDTpq1c1fxyRCiZRWwg23us5kB/image.png" alt=""></p>
+<p>追加し保存すると下記のように画面にウィジットが表示されています。</p>
+<p><img src="https://www.evernote.com/l/AB0v73mqr6tOJYgJJIIcs9DcTGSi9s2DrxEB/image.png" alt=""></p>
+<h2 id="投稿ページ（single-php）の作成">投稿ページ（single.php）の作成</h2><p>投稿ページを表示させるためにsingle.phpを作成します。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_header(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> ( have_posts() ) : <span class="keyword">while</span> ( have_posts() ) : the_post(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"jumbotron"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">h1</span> <span class="attribute">class</span>=<span class="value">"page-title"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_title(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"list-inline post-meta"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"fa fa-calendar"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span> <span class="php"><span class="preprocessor">&lt;?php</span> the_time(<span class="string">'Y年n月j日'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"fa fa-folder-open-o"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span> <span class="php"><span class="preprocessor">&lt;?php</span> the_category(<span class="string">', '</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> ( has_tag() ) &#123; <span class="comment">// Check if post has any tags ?&gt;</span></span></span><br><span class="line">        <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"fa fa-tags"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span> <span class="php"><span class="preprocessor">&lt;?php</span> the_tags(<span class="string">''</span>, <span class="string">', '</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> &#125; <span class="comment">// end if ?&gt;</span></span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .col-md-8 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-4 img-featured"</span>&gt;</span></span><br><span class="line">      <span class="php"><span class="preprocessor">&lt;?php</span> <span class="comment">// Insert featured image</span></span><br><span class="line">        <span class="keyword">if</span> (has_post_thumbnail()) &#123;</span><br><span class="line">          <span class="keyword">echo</span> get_the_post_thumbnail(<span class="variable">$post</span>-&gt;ID, <span class="string">'large'</span>, <span class="keyword">array</span>(<span class="string">'class'</span> =&gt; <span class="string">'img-responsive'</span>, <span class="string">'title'</span> =&gt; <span class="string">''</span>));</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; <span class="comment">// Use a fallback ?&gt;</span></span></span><br><span class="line">          <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"thumbnail img-responsive"</span> <span class="attribute">src</span>=<span class="value">"http://placehold.it/750x500"</span> <span class="attribute">alt</span>=<span class="value">"Image coming soon"</span> /&gt;</span></span><br><span class="line">      <span class="php"><span class="preprocessor">&lt;?php</span> &#125; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .col-md-4 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .row --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .container --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .jumbotron --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-8"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">article</span> <span class="php"><span class="preprocessor">&lt;?php</span> post_class(); <span class="preprocessor">?&gt;</span></span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> the_content(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">        <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pager"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"previous"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> previous_post_link(<span class="string">'%link'</span>, <span class="string">'&lt;i class="fa fa-chevron-left"&gt;&lt;/i&gt;&amp;nbsp; %title'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"next"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> next_post_link(<span class="string">'%link'</span>, <span class="string">'%title &amp;nbsp;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">article</span>&gt;</span></span><br><span class="line">      <span class="php"><span class="preprocessor">&lt;?php</span> <span class="comment">//comments_template(); ?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .col-md-8 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-4"</span>&gt;</span></span><br><span class="line">      <span class="php"><span class="preprocessor">&lt;?php</span> get_sidebar(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .row --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .container --&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endwhile</span>; <span class="keyword">endif</span>; <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_footer(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="アイキャッチ画像の設置">アイキャッチ画像の設置</h2><p>functions.php</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// アイキャッチ画像対応</span></span><br><span class="line">add_theme_support(<span class="string">'post-thumbnails'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="検索フォーム（searchform-php）の作成">検索フォーム（searchform.php）の作成</h2><p>Wordpressには記事（固定ページや投稿ページ）を検索が備わっています。検索を行えるように検索用のフォーム画面を作成します。<code>searchform.php</code>を作成してください。</p>
+<p>searchform.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> <span class="variable">$search_terms</span> = htmlspecialchars( <span class="variable">$_GET</span>[<span class="string">"s"</span>] ); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">form</span> <span class="attribute">role</span>=<span class="value">"form"</span> <span class="attribute">action</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'siteurl'</span>); <span class="preprocessor">?&gt;</span></span>/"</span> <span class="attribute">id</span>=<span class="value">"searchform"</span> <span class="attribute">method</span>=<span class="value">"get"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"s"</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>Search<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"input-group"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">id</span>=<span class="value">"s"</span> <span class="attribute">name</span>=<span class="value">"s"</span> <span class="attribute">placeholder</span>=<span class="value">"Search"</span><span class="value">&lt;?php</span> <span class="attribute">if</span> ( $<span class="attribute">search_terms</span> !=<span class="value">=</span> '' ) &#123; <span class="attribute">echo</span> ' <span class="attribute">value</span>=<span class="value">"' . $search_terms . '"</span><span class="value">'; &#125; ?&gt; /&gt;</span><br><span class="line">        &lt;span class="input-group-btn"&gt;</span><br><span class="line">            &lt;button type="submit" class="btn btn-primary"&gt;&lt;i class="icon-search"&gt;&lt;/i&gt;&lt;/button&gt;</span><br><span class="line">        &lt;/span&gt;</span><br><span class="line">    &lt;/div&gt; &lt;!-- .input-group --&gt;</span><br><span class="line">&lt;/form&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="検索結果画面作成">検索結果画面作成</h2><p>次に、検索結果を表示させるテンプレート画面を作成します。<code>search.php</code>ファイルを作成してください。</p>
+<p>search.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_header() <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"jumbotron"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Search <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"keyword"</span>&gt;</span>&amp;ldquo;<span class="php"><span class="preprocessor">&lt;?php</span> the_search_query(); <span class="preprocessor">?&gt;</span></span>&amp;rdquo;<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> (<span class="variable">$results_count</span> == <span class="string">''</span> || <span class="variable">$results_count</span> == <span class="number">0</span>) &#123; <span class="comment">// No Results ?&gt;</span></span></span><br><span class="line">            <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-danger"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> _e(<span class="string">'No Results'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>&amp;nbsp; <span class="php"><span class="preprocessor">&lt;?php</span> _e(<span class="string">'Try different search terms.'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> &#125; <span class="keyword">else</span> &#123; <span class="comment">// Results Found ?&gt;</span></span></span><br><span class="line">            <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"label label-success"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> <span class="variable">$results_count</span> . __(<span class="string">' Results'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> &#125; <span class="comment">// end results check ?&gt;</span></span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-3"</span>&gt;</span></span><br><span class="line">                <span class="php"><span class="preprocessor">&lt;?php</span> get_search_form(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .container --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .jumbotron --&gt;</span></span><br></pre></td></tr></table></figure>
+<p>この状態で検索したキーワードを表示させる部分が完成しました。<br>次に検索結果の記事内容を表示させるようにします。</p>
+<p>search.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-8"</span>&gt;</span></span><br><span class="line">            <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> (have_posts()) : <span class="comment">// Results Found ?&gt;</span></span></span><br><span class="line">                <span class="tag">&lt;<span class="title">h1</span>&gt;</span>検索結果<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">                <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">while</span> (have_posts()) : the_post(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">                <span class="tag">&lt;<span class="title">article</span> <span class="php"><span class="preprocessor">&lt;?php</span> post_class(); <span class="preprocessor">?&gt;</span></span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">h2</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> the_permalink() <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_title(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">h2</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"entry"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> wp_trim_words( get_the_excerpt(), <span class="number">30</span>, <span class="string">'...'</span> ); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="title">article</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">hr</span> /&gt;</span></span><br><span class="line">                <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endwhile</span>; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">                <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pager"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> next_posts_link(<span class="string">'&lt;i class="icon-chevron-left"&gt;&lt;/i&gt;&amp;nbsp; Older Results'</span>) <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> previous_posts_link(<span class="string">'Newer Results &amp;nbsp;&lt;i class="icon-chevron-right"&gt;&lt;/i&gt;'</span>) <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">            <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">else</span> : <span class="comment">// No Results ?&gt;</span></span></span><br><span class="line">                <span class="tag">&lt;<span class="title">p</span>&gt;</span>検索結果：該当ページなし<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-6 posts"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">h3</span>&gt;</span>最新投稿ページ一覧<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">                            <span class="php"><span class="preprocessor">&lt;?php</span></span><br><span class="line">                                <span class="variable">$args</span> = <span class="keyword">array</span>(</span><br><span class="line">                                    <span class="string">'numberposts'</span> =&gt; <span class="string">'10'</span>,</span><br><span class="line">                                    <span class="string">'post_status'</span> =&gt; <span class="string">'publish'</span></span><br><span class="line">                                );</span><br><span class="line">                                <span class="variable">$recent_posts</span> = wp_get_recent_posts( <span class="variable">$args</span> );</span><br><span class="line">                                <span class="keyword">foreach</span>( <span class="variable">$recent_posts</span> <span class="keyword">as</span> <span class="variable">$recent</span> ) &#123;</span><br><span class="line">                                    <span class="keyword">echo</span> <span class="string">'&lt;li&gt;&lt;a href="'</span> . get_permalink(<span class="variable">$recent</span>[<span class="string">"ID"</span>]) . <span class="string">'"&gt;'</span> . <span class="variable">$recent</span>[<span class="string">"post_title"</span>] . <span class="string">'&lt;/a&gt;&lt;/li&gt;'</span>;</span><br><span class="line">                                &#125;</span><br><span class="line">                            <span class="preprocessor">?&gt;</span></span></span><br><span class="line">                        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .posts --&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-6 pages"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">h3</span>&gt;</span>固定ページ一覧<span class="tag">&lt;/<span class="title">h3</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="title">ul</span>&gt;</span></span><br><span class="line">                            <span class="php"><span class="preprocessor">&lt;?php</span> wp_list_pages(<span class="string">'title_li=&amp;sort_column=menu_order'</span>); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">                        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .pages --&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .row --&gt;</span></span><br><span class="line">            <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endif</span>; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .col-md-8 --&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> get_sidebar(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .row --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- .container --&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_footer(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="ナビゲーションメニュー（wp_nav_menu）の設置">ナビゲーションメニュー（wp_nav_menu）の設置</h2><p>Bootstrapで作成したナビゲーションメニューをWordpressの管理画面で編集できるようにします。<br>まず、下記サイトから<code>wp-bootstrap-navwalker.php</code>を入手してください。</p>
+<p><a href="https://github.com/twittem/wp-bootstrap-navwalker" target="_blank">https://github.com/twittem/wp-bootstrap-navwalker</a></p>
+<p>ダウンロードしたら<code>wp-bootstrap-navwalker.php</code>をテーマフォルダの中に入れます。</p>
+<p><img src="https://www.evernote.com/l/AB1j1KvieTNPmI__nVIV4gor-E5f4_QnEaYB/image.png" alt=""></p>
+<p>次に、functions.php内に下記記述を追加します。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">define( <span class="string">'MYTHEMES_PATH'</span>, get_template_directory() );</span><br><span class="line"><span class="keyword">require</span>( MYTHEMES_PATH.<span class="string">'/wp_bootstrap_navwalker.php'</span> );</span><br></pre></td></tr></table></figure>
+<p>次に、header.phpを開いて、今までHTMLでメニューを定義していた箇所に<code>wp_nav_menu</code>を入れます。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Navigation --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">class</span>=<span class="value">"navbar navbar-default navbar-fixed-top"</span> <span class="attribute">role</span>=<span class="value">"navigation"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"navbar-header"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"navbar-toggle"</span> <span class="attribute">data-toggle</span>=<span class="value">"collapse"</span> <span class="attribute">data-target</span>=<span class="value">"#bs-example-navbar-collapse-1"</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span>&gt;</span>Toggle navigation<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">button</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"navbar-brand"</span> <span class="attribute">href</span>=<span class="value">"index.html"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> bloginfo(<span class="string">'name'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">      <span class="php"><span class="preprocessor">&lt;?php</span> wp_nav_menu( <span class="keyword">array</span>(</span><br><span class="line">          <span class="string">'menu'</span> =&gt; <span class="string">'primary'</span>,</span><br><span class="line">          <span class="string">'theme_location'</span> =&gt; <span class="string">'primary'</span>,</span><br><span class="line">          <span class="string">'menu_class'</span> =&gt; <span class="string">'nav navbar-nav'</span>,</span><br><span class="line">          <span class="string">'container_class'</span> =&gt; <span class="string">'navbar-collapse collapse'</span>,</span><br><span class="line">          <span class="string">'fallback_cb'</span> =&gt; <span class="string">'wp_bootstrap_navwalker::fallback'</span>,</span><br><span class="line">          <span class="string">'walker'</span> =&gt; <span class="keyword">new</span> wp_bootstrap_navwalker()</span><br><span class="line">      ) );<span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span><span class="comment">&lt;!-- /.container --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">nav</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>次に、WordPressの管理画面でメニューを作成します。</p>
+<p><img src="https://www.evernote.com/l/AB0YZZ-x3AhMk73nBFEZy9KcGNeyj7b7Z5wB/image.png" alt=""></p>
+<p>メニューを作成したらその内容がトップページのナビゲーションメニューにも反映されている事を確認してみてください。</p>
+<h2 id="最新記事一覧を表示">最新記事一覧を表示</h2><p>トップページに最新記事一覧を表示させます。</p>
+<p>index.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_header(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Hello Wordpress!!<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- お知らせ一覧 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">h1</span>&gt;</span>最新記事<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span></span><br><span class="line">    <span class="variable">$newslist</span> = get_posts( <span class="keyword">array</span>(</span><br><span class="line">      <span class="comment">// 'category_name' =&gt; 'news', //特定のカテゴリースラッグを指定</span></span><br><span class="line">      <span class="string">'posts_per_page'</span> =&gt; <span class="number">10</span> <span class="comment">//取得記事件数</span></span><br><span class="line">    ));</span><br><span class="line">      <span class="keyword">foreach</span>( <span class="variable">$newslist</span> <span class="keyword">as</span> <span class="variable">$post</span> ):</span><br><span class="line">      setup_postdata( <span class="variable">$post</span> ); <span class="comment">// 投稿情報を各種のグローバル変数へセット</span></span><br><span class="line">    <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-sm-12 col-lg-12 col-md-12"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"thumbnail clearfix"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"eyecatch col-md-4 col-sm-4"</span>&gt;</span></span><br><span class="line">          <span class="php"><span class="preprocessor">&lt;?php</span> <span class="comment">// アイキャッチ画像</span></span><br><span class="line">            <span class="keyword">if</span> (has_post_thumbnail()) &#123;</span><br><span class="line">              <span class="keyword">echo</span> get_the_post_thumbnail(<span class="variable">$post</span>-&gt;ID, <span class="string">'thumbnail'</span>, <span class="keyword">array</span>(<span class="string">'class'</span> =&gt; <span class="string">'img-responsive'</span>, <span class="string">'title'</span> =&gt; <span class="string">''</span>));</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">// アイキャッチ画像がない場合 ?&gt;</span></span></span><br><span class="line">              <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"img-responsive"</span> <span class="attribute">src</span>=<span class="value">"http://placehold.it/320x150"</span> <span class="attribute">alt</span>=<span class="value">"Image coming soon"</span> /&gt;</span></span><br><span class="line">          <span class="php"><span class="preprocessor">&lt;?php</span> &#125; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"caption col-md-8 col-sm-8"</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">h4</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> the_permalink() <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_title(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">h4</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"date"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_time(<span class="string">'Y年n月j日'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> mb_substr(strip_tags(<span class="variable">$post</span>-&gt;post_content),<span class="number">0</span>,<span class="number">100</span>).<span class="string">'...'</span>; <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span></span><br><span class="line">    <span class="keyword">endforeach</span>;</span><br><span class="line">    wp_reset_postdata();</span><br><span class="line">  <span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="comment">&lt;!-- /お知らせ一覧 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_footer(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>最新記事一覧のようにWordpressに保存されている記事を様々な条件で取得するには<code>get_posts</code>の関数を使って取得する事ができます。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="variable">$newslist</span> = get_posts( <span class="keyword">array</span>(</span><br><span class="line">  <span class="comment">// 'category_name' =&gt; 'news', //特定のカテゴリースラッグを指定</span></span><br><span class="line">  <span class="string">'posts_per_page'</span> =&gt; <span class="number">10</span> <span class="comment">//取得記事件数</span></span><br><span class="line">));</span><br><span class="line">  <span class="keyword">foreach</span>( <span class="variable">$newslist</span> <span class="keyword">as</span> <span class="variable">$post</span> ):</span><br><span class="line">  setup_postdata( <span class="variable">$post</span> ); <span class="comment">// 投稿情報を各種のグローバル変数へセット</span></span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>get_post</code>についての詳しい記述は下記をご覧ください。</p>
+<p><a href="http://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/get_posts" target="_blank">get_postsについて</a></p>
+<h2 id="カテゴリ一覧">カテゴリ一覧</h2><p>次にカテゴリに属している記事一覧ページのテンプレートを作成します。</p>
+<p>category.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_header(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"contents"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-xs-12 col-sm-12 achives"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-sm-12 col-lg-12 col-md-12"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">h2</span>&gt;</span>カテゴリ : <span class="php"><span class="preprocessor">&lt;?php</span> single_tag_title(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> ( have_posts() ) : <span class="keyword">while</span> ( have_posts() ) : the_post(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-sm-12 col-lg-12 col-md-12"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"thumbnail clearfix"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"eyecatch col-md-4 col-sm-4"</span>&gt;</span></span><br><span class="line">            <span class="php"><span class="preprocessor">&lt;?php</span> <span class="comment">// アイキャッチ画像</span></span><br><span class="line">          <span class="keyword">if</span> (has_post_thumbnail()) &#123;</span><br><span class="line">            <span class="keyword">echo</span> get_the_post_thumbnail(<span class="variable">$post</span>-&gt;ID, <span class="string">'thumbnail'</span>, <span class="keyword">array</span>(<span class="string">'class'</span> =&gt; <span class="string">'img-responsive'</span>, <span class="string">'title'</span> =&gt; <span class="string">''</span>));</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123; <span class="comment">// アイキャッチ画像がない場合 ?&gt;</span></span></span><br><span class="line">            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"img-responsive"</span> <span class="attribute">src</span>=<span class="value">"http://placehold.it/320x150"</span> <span class="attribute">alt</span>=<span class="value">"Image coming soon"</span> /&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> &#125; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"caption col-md-8 col-sm-8"</span>&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="title">h4</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> the_permalink() <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_title(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">h4</span>&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"date"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_time(<span class="string">'Y年n月j日'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> mb_substr(strip_tags(<span class="variable">$post</span>-&gt;post_content),<span class="number">0</span>,<span class="number">100</span>).<span class="string">'...'</span>; <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endwhile</span>; <span class="keyword">endif</span>; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_footer(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="タグ一覧">タグ一覧</h2><p>次にカテゴリに属している記事一覧ページのテンプレートを作成します。<br>テンプレートタグ「single_cat_title()」でタグ名を表示できます。<br>これは、カテゴリー名も表示するタグなので、category.phpのまま。修正不要。</p>
+<p>tag.php</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_header(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"contents"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container"</span> <span class="attribute">id</span>=<span class="value">"main"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-xs-12 col-sm-12 achives"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-sm-12 col-lg-12 col-md-12"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">h2</span>&gt;</span>カテゴリ : <span class="php"><span class="preprocessor">&lt;?php</span> single_tag_title(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> ( have_posts() ) : <span class="keyword">while</span> ( have_posts() ) : the_post(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-sm-12 col-lg-12 col-md-12"</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"thumbnail clearfix"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"eyecatch col-md-4 col-sm-4"</span>&gt;</span></span><br><span class="line">            <span class="php"><span class="preprocessor">&lt;?php</span> <span class="comment">// アイキャッチ画像</span></span><br><span class="line">          <span class="keyword">if</span> (has_post_thumbnail()) &#123;</span><br><span class="line">            <span class="keyword">echo</span> get_the_post_thumbnail(<span class="variable">$post</span>-&gt;ID, <span class="string">'thumbnail'</span>, <span class="keyword">array</span>(<span class="string">'class'</span> =&gt; <span class="string">'img-responsive'</span>, <span class="string">'title'</span> =&gt; <span class="string">''</span>));</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123; <span class="comment">// アイキャッチ画像がない場合 ?&gt;</span></span></span><br><span class="line">            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">class</span>=<span class="value">"img-responsive"</span> <span class="attribute">src</span>=<span class="value">"http://placehold.it/320x150"</span> <span class="attribute">alt</span>=<span class="value">"Image coming soon"</span> /&gt;</span></span><br><span class="line">        <span class="php"><span class="preprocessor">&lt;?php</span> &#125; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"caption col-md-8 col-sm-8"</span>&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="title">h4</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> the_permalink() <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_title(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">h4</span>&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"date"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> the_time(<span class="string">'Y年n月j日'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">                  <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"content"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> mb_substr(strip_tags(<span class="variable">$post</span>-&gt;post_content),<span class="number">0</span>,<span class="number">100</span>).<span class="string">'...'</span>; <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">              <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endwhile</span>; <span class="keyword">endif</span>; <span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> get_footer(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="コメント追加">コメント追加</h2><p>コメント機能を追加する場合はまずsingle.phpの下記の箇所のコメントを解除します。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="php"><span class="preprocessor">&lt;?php</span> comments_template(); <span class="preprocessor">?&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>次に、<code>comments.php</code>を作成して下記を追加します。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"respond"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">h4</span>&gt;</span>コメントフォーム<span class="tag">&lt;/<span class="title">h4</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"cancel-comment-reply"</span>&gt;</span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> cancel_comment_reply_link(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> ( get_option(<span class="string">'comment_registration'</span>) &amp;&amp; !is_user_logged_in() ) : <span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="tag">&lt;<span class="title">p</span>&gt;</span>You must be <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> wp_login_url( get_permalink() ); <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span>logged in<span class="tag">&lt;/<span class="title">a</span>&gt;</span> to post a comment.<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">else</span> : <span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="tag">&lt;<span class="title">form</span> <span class="attribute">role</span>=<span class="value">"form"</span> <span class="attribute">class</span>=<span class="value">"form-horizontal"</span> <span class="attribute">action</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> get_option(<span class="string">'siteurl'</span>); <span class="preprocessor">?&gt;</span></span>/wp-comments-post.php"</span> <span class="attribute">method</span>=<span class="value">"post"</span> <span class="attribute">id</span>=<span class="value">"commentform"</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> ( is_user_logged_in() ) : <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;<span class="title">p</span>&gt;</span></span><br><span class="line">      ログイン <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> get_option(<span class="string">'siteurl'</span>); <span class="preprocessor">?&gt;</span></span>/wp-admin/profile.php"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> <span class="variable">$user_identity</span>; <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span>. </span><br><span class="line">      <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> wp_logout_url(get_permalink()); <span class="preprocessor">?&gt;</span></span>"</span> <span class="attribute">title</span>=<span class="value">"Log out of this account"</span>&gt;</span>ログアウト<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">else</span> : <span class="preprocessor">?&gt;</span></span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span> <span class="attribute">for</span>=<span class="value">"author"</span>&gt;</span>名前<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-5"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">name</span>=<span class="value">"author"</span> <span class="attribute">id</span>=<span class="value">"author"</span> <span class="attribute">value</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> esc_attr(<span class="variable">$comment_author</span>); <span class="preprocessor">?&gt;</span></span>"</span> <span class="attribute">tabindex</span>=<span class="value">"1"</span> <span class="attribute">placeholder</span>=<span class="value">"Name"</span> <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> (<span class="variable">$req</span>) <span class="keyword">echo</span> <span class="string">"aria-required='true'"</span>; <span class="preprocessor">?&gt;</span></span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .form-group --&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span> <span class="attribute">for</span>=<span class="value">"email"</span>&gt;</span>メール<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-5"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">name</span>=<span class="value">"email"</span> <span class="attribute">id</span>=<span class="value">"email"</span> <span class="attribute">value</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> esc_attr(<span class="variable">$comment_author_email</span>); <span class="preprocessor">?&gt;</span></span>"</span> <span class="attribute">tabindex</span>=<span class="value">"2"</span> <span class="attribute">placeholder</span>=<span class="value">"Email"</span> <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> (<span class="variable">$req</span>) <span class="keyword">echo</span> <span class="string">"aria-required='true'"</span>; <span class="preprocessor">?&gt;</span></span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .form-group --&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span> <span class="attribute">for</span>=<span class="value">"url"</span>&gt;</span>ウェブサイト<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-5"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"text"</span> <span class="attribute">class</span>=<span class="value">"form-control"</span> <span class="attribute">name</span>=<span class="value">"url"</span> <span class="attribute">id</span>=<span class="value">"url"</span> <span class="attribute">value</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> esc_attr(<span class="variable">$comment_author_url</span>); <span class="preprocessor">?&gt;</span></span>"</span> <span class="attribute">tabindex</span>=<span class="value">"3"</span> <span class="attribute">placeholder</span>=<span class="value">"Website"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .form-group --&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endif</span>; <span class="preprocessor">?&gt;</span></span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">label</span> <span class="attribute">class</span>=<span class="value">"sr-only"</span> <span class="attribute">for</span>=<span class="value">"comment"</span>&gt;</span>コメント<span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-10"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">textarea</span> <span class="attribute">class</span>=<span class="value">"form-control input-lg"</span> <span class="attribute">name</span>=<span class="value">"comment"</span> <span class="attribute">id</span>=<span class="value">"comment"</span> <span class="attribute">tabindex</span>=<span class="value">"4"</span> <span class="attribute">placeholder</span>=<span class="value">"Type your comment here..."</span>&gt;</span><span class="tag">&lt;/<span class="title">textarea</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"help-block"</span>&gt;</span><span class="tag">&lt;<span class="title">small</span>&gt;</span>You can use these HTML tags:<span class="tag">&lt;<span class="title">br</span> /&gt;</span><span class="tag">&lt;<span class="title">code</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> allowed_tags(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">code</span>&gt;</span><span class="tag">&lt;/<span class="title">small</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .form-group --&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-10"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary"</span> <span class="attribute">tabindex</span>=<span class="value">"5"</span> <span class="attribute">value</span>=<span class="value">"コメント送信"</span> /&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> comment_id_fields(); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .form-group --&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> do_action(<span class="string">'comment_form'</span>, <span class="variable">$post</span>-&gt;ID); <span class="preprocessor">?&gt;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="title">form</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">endif</span>; <span class="comment">// If registration required and not logged in ?&gt;</span></span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="title">ol</span> <span class="attribute">class</span>=<span class="value">"comment-list media-list"</span>&gt;</span></span><br><span class="line">    <span class="php"><span class="preprocessor">&lt;?php</span> wp_list_comments(<span class="string">'callback=twbs_comment_format'</span>); <span class="preprocessor">?&gt;</span></span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">ol</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"pager"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> previous_comments_link(<span class="string">'&lt;i class="icon-chevron-left"&gt;&lt;/i&gt;&amp;nbsp; Older Comments'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> next_comments_link(<span class="string">'Newer Comments &amp;nbsp;&lt;i class="icon-chevron-right"&gt;&lt;/i&gt;'</span>); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- #respond --&gt;</span></span><br></pre></td></tr></table></figure>
+<p>さらに、コメントをBoostrap仕様にするために、<code>functions.php</code>に下記を追加してください。</p>
+<pre><code>// コメントBootstrap仕様に変更
+function twbs_comment_format($comment, $args, $depth) {
+  $GLOBALS['comment'] = $comment; ?&gt;
+  <span class="tag">&lt;<span class="title">li</span> <span class="php"><span class="preprocessor">&lt;?php</span> comment_class(<span class="string">'media'</span>); <span class="preprocessor">?&gt;</span></span> <span class="attribute">id</span>=<span class="value">"comment-<span class="php"><span class="preprocessor">&lt;?php</span> comment_ID(); <span class="preprocessor">?&gt;</span></span>"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">article</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"comment-meta pull-left"</span>&gt;</span>
+        <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> get_avatar( <span class="variable">$comment</span>, <span class="number">96</span> ); <span class="preprocessor">?&gt;</span></span>
+        <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"text-center comment-author"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> comment_author_link(); <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .comment-meta --&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"comment-content media-body"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span> <span class="attribute">class</span>=<span class="value">"comment-date text-right text-muted pull-right"</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> human_time_diff( get_comment_time(<span class="string">'U'</span>), current_time(<span class="string">'timestamp'</span>) ) . <span class="string">' ago'</span>; <span class="preprocessor">?&gt;</span></span> &amp;nbsp;<span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"comment-permalink"</span> <span class="attribute">href</span>=<span class="value">"<span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">echo</span> htmlspecialchars ( get_comment_link( <span class="variable">$comment</span>-&gt;comment_ID ) ) <span class="preprocessor">?&gt;</span></span>"</span> <span class="attribute">title</span>=<span class="value">"Comment Permalink"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"icon-link"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="php"><span class="preprocessor">&lt;?php</span> <span class="keyword">if</span> (<span class="variable">$comment</span>-&gt;comment_approved == <span class="string">'0'</span>) { <span class="comment">// Awaiting Moderation ?&gt;</span></span>
+          <span class="tag">&lt;<span class="title">em</span>&gt;</span><span class="php"><span class="preprocessor">&lt;?php</span> _e(<span class="string">'Your comment is awaiting moderation.'</span>) <span class="preprocessor">?&gt;</span></span><span class="tag">&lt;/<span class="title">em</span>&gt;</span>
+        <span class="php"><span class="preprocessor">&lt;?php</span> } <span class="preprocessor">?&gt;</span></span>
+        <span class="php"><span class="preprocessor">&lt;?php</span> comment_text(); <span class="preprocessor">?&gt;</span></span>
+        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"reply pull-right"</span>&gt;</span>
+          <span class="php"><span class="preprocessor">&lt;?php</span> comment_reply_link( array_merge( <span class="variable">$args</span>, <span class="keyword">array</span>( <span class="string">'reply_text'</span> =&gt; __( <span class="string">'&lt;i class="fa fa-reply"&gt;&lt;/i&gt;&amp;nbsp; Reply'</span> ), <span class="string">'depth'</span> =&gt; <span class="variable">$depth</span>, <span class="string">'max_depth'</span> =&gt; <span class="variable">$args</span>[<span class="string">'max_depth'</span>] ) ) ); <span class="preprocessor">?&gt;</span></span>
+        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .comment-content --&gt;</span>
+    <span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+<span class="php"><span class="preprocessor">&lt;?php</span> } <span class="comment">// twbs_comment_format </span>
+<span class="comment">// Add Class to Gravatar</span>
+add_filter(<span class="string">'get_avatar'</span>, <span class="string">'twbs_avatar_class'</span>);
+<span class="function"><span class="keyword">function</span> <span class="title">twbs_avatar_class</span><span class="params">(<span class="variable">$class</span>)</span> </span>{
+  <span class="variable">$class</span> = str_replace(<span class="string">"class='avatar"</span>, <span class="string">"class='avatar img-circle media-object"</span>, <span class="variable">$class</span>);
+  <span class="keyword">return</span> <span class="variable">$class</span>;
+}
+<span class="comment">// Add Class to Comment Reply Link</span>
+add_filter(<span class="string">'comment_reply_link'</span>, <span class="string">'twbs_reply_link_class'</span>);
+<span class="function"><span class="keyword">function</span> <span class="title">twbs_reply_link_class</span><span class="params">(<span class="variable">$class</span>)</span></span>{
+  <span class="variable">$class</span> = str_replace(<span class="string">"class='comment-reply-link"</span>, <span class="string">"class='comment-reply-link btn btn-success"</span>, <span class="variable">$class</span>);
+  <span class="keyword">return</span> <span class="variable">$class</span>;
+}</span>
+</code></pre><p><img src="https://www.evernote.com/l/AB0NvURZ2XlHB5imHKev5C1QwbMmcX4QtYoB/image.png" alt=""></p>
+<p>これで基本的なテーマの機能を実装できました。</p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Wordpress/"> #Wordpress </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/06/20/php/php-form/">PHP フォーム送信・DB管理システム開発</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/05/11/orientation/env/">環境構築</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    
+  </div>
+
+
+        </div>
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="https://terakoya-web.com/wp-content/themes/terakoya/images/logo3.png" alt="オンライン学習 TERAKOYA" />
+          <p class="site-author-name">オンライン学習 TERAKOYA</p>
+        </div>
+        
+        <p class="site-description motion-element">Webもアプリも会社経営も何でもやってます。</p>
+
+        
+        <div class="site-state motion-element">
+          
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+          
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">categories</span>
+              </a>
+          </div>
+          
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+        </div>
+
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/HTML基本/">HTML基本</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Swift/">Swift</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Wordpress/">Wordpress</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/はじめに/">はじめに</a><span class="category-list-count">2</span></li></ul>
+
+
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#テーマファイルの作成の流れ"><span class="nav-number">1.</span> <span class="nav-text">テーマファイルの作成の流れ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#テーマファイルフォルダ作成"><span class="nav-number">2.</span> <span class="nav-text">テーマファイルフォルダ作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#style-cssファイル作成"><span class="nav-number">3.</span> <span class="nav-text">style.cssファイル作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#index-phpの作成"><span class="nav-number">4.</span> <span class="nav-text">index.phpの作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ヘッダーパーツ（header-php）の作成"><span class="nav-number">5.</span> <span class="nav-text">ヘッダーパーツ（header.php）の作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#フッターパーツ（footer-php）の作成"><span class="nav-number">6.</span> <span class="nav-text">フッターパーツ（footer.php）の作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#固定ページ（page-php）の作成"><span class="nav-number">7.</span> <span class="nav-text">固定ページ（page.php）の作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#サイドメニュー（sidebar-php）の作成"><span class="nav-number">8.</span> <span class="nav-text">サイドメニュー（sidebar.php）の作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#固定ページの編集"><span class="nav-number">9.</span> <span class="nav-text">固定ページの編集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#やってみよう"><span class="nav-number">9.1.</span> <span class="nav-text">やってみよう</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#サイドメニューにウィジットを表示"><span class="nav-number">10.</span> <span class="nav-text">サイドメニューにウィジットを表示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#投稿ページ（single-php）の作成"><span class="nav-number">11.</span> <span class="nav-text">投稿ページ（single.php）の作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#アイキャッチ画像の設置"><span class="nav-number">12.</span> <span class="nav-text">アイキャッチ画像の設置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#検索フォーム（searchform-php）の作成"><span class="nav-number">13.</span> <span class="nav-text">検索フォーム（searchform.php）の作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#検索結果画面作成"><span class="nav-number">14.</span> <span class="nav-text">検索結果画面作成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ナビゲーションメニュー（wp_nav_menu）の設置"><span class="nav-number">15.</span> <span class="nav-text">ナビゲーションメニュー（wp_nav_menu）の設置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最新記事一覧を表示"><span class="nav-number">16.</span> <span class="nav-text">最新記事一覧を表示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#カテゴリ一覧"><span class="nav-number">17.</span> <span class="nav-text">カテゴリ一覧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#タグ一覧"><span class="nav-number">18.</span> <span class="nav-text">タグ一覧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#コメント追加"><span class="nav-number">19.</span> <span class="nav-text">コメント追加</span></a></li></ol></div>
+              <div>
+                
+              </div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp; 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">オンライン学習 TERAKOYA</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.content img').each(function () {
+        var $image = $(this);
+        var $imageWrapLink = $image.parent('a');
+
+        if ($imageWrapLink.size() < 1) {
+          $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
+        }
+        $imageWrapLink.addClass('fancybox');
+      });
+    });
+    $('.fancybox').fancybox({
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    });
+  </script>
+
+
+  <script type="text/javascript">
+  function hasMobileUA () {
+    var nav = window.navigator;
+    var ua = nav.userAgent;
+    var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
+
+    return pa.test(ua);
+  }
+
+  function isDesktop () {
+    return screen.width > 991 && !hasMobileUA();
+  }
+
+  function isTablet () {
+    return screen.width < 992 && screen.width > 767 && hasMobileUA();
+  }
+
+  function isMobile () {
+    return screen.width < 767 && hasMobileUA();
+  }
+
+  function escapeSelector (selector) {
+    return selector.replace(/[!"$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")
+  }
+</script>
+
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" id="motion.global">
+  $(document).ready(function () {
+    var body = $('body');
+    var isSidebarVisible = false;
+    var sidebarToggle = $('.sidebar-toggle');
+    var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
+    var sidebarToggleLine2nd = $('.sidebar-toggle-line-middle');
+    var sidebarToggleLine3rd = $('.sidebar-toggle-line-last');
+    var sidebar = $('.sidebar');
+
+    var SIDEBAR_WIDTH = '320px';
+    var SIDEBAR_DISPLAY_DURATION = 300;
+
+    var sidebarToogleLineStatusInit = {width: '100%', opacity: 1, left: 0, rotateZ: 0, top: 0};
+
+    var sidebarToggleLine1stStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine1stStatusArrow = {width: '50%', rotateZ: '-45deg', top: '2px'};
+    var sidebarToogleLine1stStatusClose = {width: '100%', rotateZ: '-45deg', top: '5px'};
+
+    var sidebarToggleLine2ndStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine2ndStatusArrow = {width: '90%'};
+    var sidebarToogleLine2ndStatusClose = {opacity: 0};
+
+    var sidebarToggleLine3rdStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine3rdStatusArrow = {width: '50%', rotateZ: '45deg', top: '-2px'};
+    var sidebarToogleLine3rdStatusClose = {width: '100%', rotateZ: '45deg', top: '-5px'};
+
+    LogoAndMenuMotion();
+    sidebatToggleMotion();
+    postsListMotion();
+    backToTopMotion();
+
+
+    $(document)
+      .on('sidebar.isShowing', function () {
+        isDesktop() && body.velocity(
+          {paddingRight: SIDEBAR_WIDTH},
+          SIDEBAR_DISPLAY_DURATION
+        );
+        sidebarContentMotion();
+      })
+      .on('sidebar.isHiding', function () {});
+
+    function LogoAndMenuMotion() {
+      $.Velocity.RunSequence([
+        { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
+        { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        
+        { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
+      ]);
+      $('.menu-item').velocity('transition.slideDownIn', {display: null});
+    }
+
+
+    function backToTopMotion () {
+      var b2top = $('.back-to-top');
+      b2top.on('click', function () {
+        body.velocity('scroll');
+      });
+    }
+
+    function sidebarShowMotion () {
+
+      sidebarToggleLine1st.velocity(sidebarToogleLine1stStatusClose);
+      sidebarToggleLine2nd.velocity(sidebarToogleLine2ndStatusClose);
+      sidebarToggleLine3rd.velocity(sidebarToogleLine3rdStatusClose);
+
+      sidebar.velocity({width: SIDEBAR_WIDTH}, {
+        display: 'block',
+        duration: SIDEBAR_DISPLAY_DURATION,
+        complete: function () {
+          sidebar.addClass('sidebar-active');
+          sidebar.trigger('sidebar.didShow');
+        }
+      });
+      sidebar.trigger('sidebar.isShowing');
+    }
+
+    function sidebarHideMotion () {
+      isDesktop() && body.velocity({paddingRight: 0});
+      sidebar.velocity('reverse');
+
+      sidebarToggleLine1st.velocity(sidebarToggleLine1stStatusInit);
+      sidebarToggleLine2nd.velocity(sidebarToggleLine2ndStatusInit);
+      sidebarToggleLine3rd.velocity(sidebarToggleLine3rdStatusInit);
+
+      sidebar.removeClass('sidebar-active');
+      sidebar.trigger('sidebar.isHiding');
+    };
+
+    function sidebarContentMotion () {
+      $('.sidebar .motion-element').velocity(
+        'transition.slideRightIn',
+        {stagger: 50, drag: true}
+      );
+    }
+
+    function postsListMotion () {
+      var postMotionOptions = window.postMotionOptions || {stagger: 300, drag: true};
+      $('.post').velocity('transition.slideDownIn', postMotionOptions);
+    }
+
+    function sidebatToggleMotion () {
+      sidebarToggle.on('click', function () {
+        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+        isSidebarVisible = !isSidebarVisible;
+      });
+
+      sidebarToggle.hover(function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusArrow);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusArrow);
+      }, function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusInit);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusInit);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusInit);
+      });
+    }
+  });
+
+</script>
+
+
+
+
+
+  
+  
+<script type="text/javascript" id="bootstrap.scrollspy.custom">
+  /* ========================================================================
+  * Bootstrap: scrollspy.js v3.3.2
+  * http://getbootstrap.com/javascript/#scrollspy
+  * ========================================================================
+  * Copyright 2011-2015 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * ======================================================================== */
+
+  /**
+   * Custom by iissnan
+   *
+   * - Add a `clear.bs.scrollspy` event.
+   * - Esacpe targets selector.
+   */
+
+
+  +function ($) {
+    'use strict';
+
+    // SCROLLSPY CLASS DEFINITION
+    // ==========================
+
+    function ScrollSpy(element, options) {
+      this.$body          = $(document.body)
+      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+      this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
+      this.selector       = (this.options.target || '') + ' .nav li > a'
+      this.offsets        = []
+      this.targets        = []
+      this.activeTarget   = null
+      this.scrollHeight   = 0
+
+      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+      this.refresh()
+      this.process()
+    }
+
+    ScrollSpy.VERSION  = '3.3.2'
+
+    ScrollSpy.DEFAULTS = {
+      offset: 10
+    }
+
+    ScrollSpy.prototype.getScrollHeight = function () {
+      return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+    }
+
+    ScrollSpy.prototype.refresh = function () {
+      var that          = this
+      var offsetMethod  = 'offset'
+      var offsetBase    = 0
+
+      this.offsets      = []
+      this.targets      = []
+      this.scrollHeight = this.getScrollHeight()
+
+      if (!$.isWindow(this.$scrollElement[0])) {
+        offsetMethod = 'position'
+        offsetBase   = this.$scrollElement.scrollTop()
+      }
+
+      this.$body
+        .find(this.selector)
+        .map(function () {
+          var $el   = $(this)
+          var href  = $el.data('target') || $el.attr('href')
+          var $href = /^#./.test(href) && $(escapeSelector(href)) // Need to escape selector.
+
+          return ($href
+            && $href.length
+            && $href.is(':visible')
+            && [[$href[offsetMethod]().top + offsetBase, href]]) || null
+        })
+        .sort(function (a, b) { return a[0] - b[0] })
+        .each(function () {
+          that.offsets.push(this[0])
+          that.targets.push(this[1])
+        })
+
+
+    }
+
+    ScrollSpy.prototype.process = function () {
+      var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
+      var scrollHeight = this.getScrollHeight()
+      var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
+      var offsets      = this.offsets
+      var targets      = this.targets
+      var activeTarget = this.activeTarget
+      var i
+
+      if (this.scrollHeight != scrollHeight) {
+        this.refresh()
+      }
+
+      if (scrollTop >= maxScroll) {
+        return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
+      }
+
+      if (activeTarget && scrollTop < offsets[0]) {
+        $(this.selector).trigger('clear.bs.scrollspy')  // Add a custom event.
+        this.activeTarget = null
+        return this.clear()
+      }
+
+      for (i = offsets.length; i--;) {
+        activeTarget != targets[i]
+          && scrollTop >= offsets[i]
+          && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
+          && this.activate(targets[i])
+      }
+    }
+
+    ScrollSpy.prototype.activate = function (target) {
+      this.activeTarget = target
+
+      this.clear()
+
+      var selector = this.selector +
+        '[data-target="' + target + '"],' +
+        this.selector + '[href="' + target + '"]'
+
+      var active = $(selector)
+        .parents('li')
+        .addClass('active')
+
+      if (active.parent('.dropdown-menu').length) {
+        active = active
+          .closest('li.dropdown')
+          .addClass('active')
+      }
+
+      active.trigger('activate.bs.scrollspy')
+    }
+
+    ScrollSpy.prototype.clear = function () {
+      $(this.selector)
+        .parentsUntil(this.options.target, '.active')
+        .removeClass('active')
+    }
+
+
+    // SCROLLSPY PLUGIN DEFINITION
+    // ===========================
+
+    function Plugin(option) {
+      return this.each(function () {
+        var $this   = $(this)
+        var data    = $this.data('bs.scrollspy')
+        var options = typeof option == 'object' && option
+
+        if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
+        if (typeof option == 'string') data[option]()
+      })
+    }
+
+    var old = $.fn.scrollspy
+
+    $.fn.scrollspy             = Plugin
+    $.fn.scrollspy.Constructor = ScrollSpy
+
+
+    // SCROLLSPY NO CONFLICT
+    // =====================
+
+    $.fn.scrollspy.noConflict = function () {
+      $.fn.scrollspy = old
+      return this
+    }
+
+
+    // SCROLLSPY DATA-API
+    // ==================
+
+    $(window).on('load.bs.scrollspy.data-api', function () {
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this)
+        Plugin.call($spy, $spy.data())
+      })
+    })
+
+  }(jQuery);
+</script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0 && isDesktop()) {
+        setTimeout(function () {
+          $('.sidebar-toggle').trigger('click');
+        }, 800);
+      }
+    });
+  </script>
+
+
+
+
+  
+
+  
+  
+  
+
+  
+
+
+
+
+  
+</body>
+</html>
